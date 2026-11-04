@@ -1,0 +1,115 @@
+.footer {
+  max-width: var(--sheet-max);
+  margin: 0 auto;
+  padding: 56px var(--pad) 32px;
+  font-size: 15px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr));
+  gap: 36px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand p {
+  margin: 18px 0 14px;
+  color: var(--navy-soft);
+  max-width: 34ch;
+}
+
+.mail {
+  font-weight: 600;
+}
+
+.phones {
+  margin-top: 16px;
+  display: grid;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.phones li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+}
+
+.phones span {
+  font-size: 12px;
+  font-weight: 700;
+  font-stretch: 87%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  padding-top: 2px;
+}
+
+.phones a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.col h2 {
+  font-size: 12px;
+  font-weight: 700;
+  font-stretch: 87%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: var(--rule-strong);
+}
+
+.col ul {
+  display: grid;
+  gap: 9px;
+}
+
+.col a,
+.legal a {
+  text-decoration: none;
+}
+
+.col a:hover,
+.legal a:hover,
+.phones a:hover {
+  text-decoration: underline;
+}
+
+.legal {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: var(--navy-soft);
+}
+
+.legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+@media (max-width: 1000px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}

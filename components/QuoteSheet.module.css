@@ -1,0 +1,543 @@
+/* The hero is the form itself: hairline boxes built from a 1px gap over navy-tinted ground. */
+.sheet {
+  display: grid;
+  gap: 1px;
+  background: var(--hair);
+}
+
+.sheet[data-done="true"] {
+  animation: nudge 0.22s 0.16s ease-out;
+}
+
+@keyframes nudge {
+  40% {
+    transform: translateY(2px);
+  }
+}
+
+/* ---------- title block ---------- */
+.titleRow {
+  display: grid;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  gap: 1px;
+}
+
+.titleBox {
+  background: var(--paper);
+  padding: clamp(28px, 4vw, 56px) var(--pad) clamp(28px, 3.4vw, 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.title {
+  font-size: clamp(42px, 6.1vw, 92px);
+  font-stretch: 118%;
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  max-width: 13ch;
+}
+
+.lede {
+  font-size: clamp(17px, 1.35vw, 19.5px);
+  color: var(--navy-soft);
+  max-width: 54ch;
+  line-height: 1.5;
+}
+
+.side {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1px;
+}
+
+.refBox {
+  background: var(--tint);
+  display: grid;
+}
+
+.refBox > div {
+  display: grid;
+  grid-template-columns: 116px 1fr;
+  align-items: baseline;
+  gap: 12px;
+  padding: 11px var(--pad);
+  border-bottom: var(--rule);
+}
+
+.refBox > div:last-child {
+  border-bottom: 0;
+}
+
+.refBox dt {
+  font-size: 11px;
+  font-weight: 600;
+  font-stretch: 87%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+}
+
+.refBox dd {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.typed {
+  font-family: var(--font-typed);
+  color: var(--ribbon);
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+
+.stampBox {
+  background: var(--paper);
+  position: relative;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+}
+
+.stampBox::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1.5px dashed var(--hair-strong);
+}
+
+.stampLabel {
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  font-stretch: 87%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy-faint);
+  background: var(--paper);
+  padding: 0 10px;
+}
+
+.stamp {
+  position: absolute;
+  z-index: 3;
+  width: min(360px, 104%);
+  left: 47%;
+  top: 24%;
+  mix-blend-mode: multiply;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  animation: thump 0.42s var(--ease-thump) both;
+  pointer-events: none;
+}
+
+@keyframes thumpInline {
+  0% {
+    opacity: 0;
+    transform: scale(1.8) rotate(-14deg);
+    filter: blur(3px);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0.95) rotate(-4deg);
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1) rotate(-5deg);
+  }
+}
+
+@keyframes thump {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.9) rotate(-15deg);
+    filter: blur(3px);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.95) rotate(-5deg);
+    filter: blur(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(-6deg);
+  }
+}
+
+/* ---------- boxes ---------- */
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.fFrom,
+.fTo,
+.fName,
+.fEmail {
+  grid-column: span 3;
+}
+.fMonth,
+.fPhone {
+  grid-column: span 2;
+}
+.fSize,
+.fAction {
+  grid-column: span 4;
+}
+
+.box {
+  background: var(--paper);
+  border: 0;
+  min-width: 0;
+  padding: 12px var(--pad) 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  transition: background-color 0.2s var(--ease-out);
+}
+
+.box:focus-within {
+  background: var(--tint);
+}
+
+.box:focus-within::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--navy);
+  pointer-events: none;
+}
+
+/* Errors print as a hatched "complete this box" field, the way forms mark a missing entry. */
+.box[data-error="true"] {
+  background: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 5, 110, 0.07) 0 2px,
+      transparent 2px 9px
+    ),
+    var(--paper);
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 700;
+  font-stretch: 87%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--navy);
+  padding: 0;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  color: var(--paper);
+  background: var(--navy);
+  padding: 1px 5px;
+  letter-spacing: 0.04em;
+}
+
+.sub {
+  font-weight: 500;
+  color: var(--navy-faint);
+  letter-spacing: 0.06em;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-typed);
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--ribbon);
+  caret-color: var(--navy);
+  padding: 4px 0 2px;
+  border-bottom: 1px dotted var(--hair-strong);
+  border-radius: 0;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--navy-faint);
+  opacity: 1;
+}
+
+.input[readonly] {
+  border-bottom-color: transparent;
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 22px;
+  background: linear-gradient(45deg, transparent 50%, var(--navy) 50%) right 8px center / 7px 7px no-repeat,
+    linear-gradient(-45deg, transparent 50%, var(--navy) 50%) right 1px center / 7px 7px no-repeat;
+  background-size: 7px 7px, 7px 7px;
+  background-position: calc(100% - 9px) 55%, calc(100% - 2px) 55%;
+}
+
+.select:disabled {
+  background: none;
+  cursor: default;
+  opacity: 1;
+}
+
+.err {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--navy);
+  display: flex;
+  gap: 7px;
+}
+
+.err::before {
+  content: "";
+  flex: none;
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  background: var(--navy);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+/* Tick boxes: selecting one types an X into the square. */
+.ticks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  padding-top: 4px;
+}
+
+.tick {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 32px;
+}
+
+.tick input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.tickBox {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--navy);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-typed);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  color: var(--ribbon);
+  background: var(--paper);
+}
+
+.tick input:checked + .tickBox::after {
+  content: "X";
+  transform: translateY(1px);
+}
+
+.tick input:focus-visible + .tickBox {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.tick:hover .tickBox {
+  background: var(--tint);
+}
+
+.tick:has(input:disabled) {
+  cursor: default;
+}
+
+/* ---------- action box ---------- */
+.actionBox {
+  background: var(--paper);
+  display: grid;
+  min-height: 96px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 18px var(--pad);
+  background: var(--orange);
+  color: var(--navy);
+  font-size: clamp(20px, 1.8vw, 26px);
+  font-weight: 800;
+  font-stretch: 112%;
+  letter-spacing: -0.01em;
+  text-align: left;
+  transition: background-color 0.18s var(--ease-out);
+}
+
+.submit:hover {
+  background: var(--orange-deep);
+}
+
+.submit svg {
+  flex: none;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.submit:hover svg {
+  transform: translateX(5px);
+}
+
+.submit:disabled {
+  cursor: progress;
+  background: var(--orange-deep);
+}
+
+.submit:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: -6px;
+}
+
+.doneNote {
+  padding: 16px var(--pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  background: var(--tint);
+}
+
+.again {
+  align-self: flex-start;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.failed {
+  padding: 10px var(--pad) 14px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+/* ---------- proof row ---------- */
+.proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.proofBox {
+  background: var(--paper);
+  padding: 12px var(--pad) 14px;
+  display: grid;
+  align-content: start;
+  gap: 6px;
+}
+
+.proofValue {
+  white-space: nowrap;
+  font-family: var(--font-typed);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--ribbon);
+  padding-top: 2px;
+}
+
+.proofNote {
+  font-size: 13.5px;
+  line-height: 1.3;
+  color: var(--navy-soft);
+}
+
+/* On phones the stamp box is off-screen at submit time, so the stamp lands in the action box. */
+.stampInline {
+  display: none;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1180px) {
+  .fFrom,
+  .fTo {
+    grid-column: span 6;
+  }
+  .fMonth,
+  .fName,
+  .fEmail,
+  .fPhone {
+    grid-column: span 4;
+  }
+  .fSize {
+    grid-column: span 8;
+  }
+  .fAction {
+    grid-column: span 12;
+  }
+  .proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .titleRow {
+    grid-template-columns: 1fr;
+  }
+  .side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .stampBox {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 620px) {
+  .form > * {
+    grid-column: 1 / -1 !important;
+  }
+  .side {
+    grid-template-columns: 1fr;
+  }
+  .refBox > div {
+    grid-template-columns: 100px 1fr;
+  }
+  .stampBox {
+    min-height: 0;
+    padding: 30px 0;
+  }
+  .stampBox {
+    display: none;
+  }
+  .stampInline {
+    display: block;
+    width: min(300px, 86%);
+    margin: 4px auto 6px;
+    mix-blend-mode: multiply;
+    transform: rotate(-5deg);
+    animation: thumpInline 0.42s var(--ease-thump) both;
+  }
+  .input {
+    font-size: 19px;
+  }
+  .proof {
+    grid-template-columns: 1fr;
+  }
+}

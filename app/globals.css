@@ -1,0 +1,150 @@
+/* Two spot inks on bond paper: navy prints the form, orange is the stamp and the action. */
+:root {
+  --navy: #00056e;
+  --orange: #fea70e;
+  --orange-deep: #fb8e28;
+  --stamp: #f58a0b;
+  --ribbon: #14161c; /* typewriter ribbon: what the shipper types */
+
+  --paper: #ffffff;
+  --desk: #eceef7;
+  --tint: #f2f3fa; /* shaded form cell */
+  --hair: rgba(0, 5, 110, 0.3);
+  --hair-strong: rgba(0, 5, 110, 0.62);
+  --navy-soft: #4a4e94; /* secondary print, 7:1 on paper */
+  --navy-faint: #5d61a2; /* placeholders, 5.6:1 on paper */
+  --on-navy-soft: #c3c6ee;
+
+  --rule: 1px solid var(--hair);
+  --rule-strong: 1.5px solid var(--navy);
+
+  --sheet-max: 1320px;
+  --pad: clamp(16px, 2.2vw, 28px);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-thump: cubic-bezier(0.22, 1, 0.36, 1); /* overshoot lives in the keyframes, not the curve */
+
+  --font-print: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-typed: "Courier Prime", ui-monospace, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  -webkit-text-size-adjust: 100%;
+  background: var(--desk);
+  scrollbar-color: var(--navy) var(--desk);
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-print);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--navy);
+  background: var(--desk);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--navy);
+  color: var(--paper);
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  background: var(--orange);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

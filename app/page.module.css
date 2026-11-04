@@ -1,0 +1,40 @@
+/* One bond sheet lying on the desk; every part of the page is printed on it. */
+.sheet {
+  max-width: var(--sheet-max);
+  margin: clamp(0px, 2.6vw, 36px) auto 0;
+  background: var(--paper);
+  border: var(--rule-strong);
+  box-shadow: 0 2px 3px rgba(0, 5, 110, 0.06), 0 34px 70px -34px rgba(0, 5, 110, 0.4);
+  display: grid;
+  overflow-x: clip; /* rotated stamps never widen the page */
+}
+
+@media (max-width: 1360px) {
+  .sheet {
+    margin-left: clamp(0px, 2.6vw, 36px);
+    margin-right: clamp(0px, 2.6vw, 36px);
+  }
+}
+
+@media (max-width: 620px) {
+  .sheet {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+/* The foot of the form: a perforated tear line and the form's revision furniture. */
+.formFoot {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px var(--pad) 14px;
+  border-top: 2px dashed var(--hair-strong);
+  font-size: 11.5px;
+  font-weight: 700;
+  font-stretch: 87%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+}

@@ -1,0 +1,147 @@
+{
+  "title": "Choose the visual world for the Universal Relocations home page",
+  "question": "The roll assigned The Bill of Lading. Keep it, take an alternate, or re-roll. Every option stays light, navy #00056E and orange #FEA70E.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Bill of Lading",
+      "kicker": "THE ROLL",
+      "lineage": "Ocean bills of lading and customs forms: the paper Universal issues as an FMC-licensed NVOCC",
+      "thesis": "The home page is the document that moves your life: you request a quote by filling in a bill of lading.",
+      "palette": ["#F7F8FC", "#00056E", "#FEA70E", "#DCE0F6", "#0F1B24"],
+      "materials": ["two-spot-ink form printing", "numbered field boxes on hairline rules", "rubber-stamp ink"],
+      "viewport": "A full-width form with numbered boxes for From, To, move date and home size. Filling it in is the quote request, and an orange RECEIVED stamp lands when you submit.",
+      "risk": "It can feel bureaucratic if the form is set timidly or the boxes get cramped.",
+      "raised": [
+        {"from": "challenger-risograph", "raise": "Printed in exactly two spot inks, navy and orange, that overprint where they cross, like a real two-colour form."},
+        {"from": "challenger-annual", "raise": "Orange is reserved for the stamp and the primary action. Every structural line is a 1px navy hairline."},
+        {"from": "challenger-brick", "raise": "Every region locks to one field-box module, so the whole page aligns like a single printed form."},
+        {"from": "challenger-map", "raise": "Quote and shipment states share one vocabulary: Received, Surveyed, Packed, Cleared, Afloat, Delivered."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "masthead: logo + form no.", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "1 FROM (port/city)", "x": 0, "y": 1, "w": 4, "h": 2, "accent": true},
+        {"label": "2 TO (port/city)", "x": 4, "y": 1, "w": 4, "h": 2, "accent": true},
+        {"label": "headline box", "x": 8, "y": 1, "w": 4, "h": 4},
+        {"label": "3 DATE", "x": 0, "y": 3, "w": 3, "h": 2},
+        {"label": "4 HOME SIZE", "x": 3, "y": 3, "w": 5, "h": 2},
+        {"label": "5 CONTACT + ISSUE QUOTE", "x": 0, "y": 5, "w": 12, "h": 2, "accent": true},
+        {"label": "particulars: 6-step handoff", "x": 0, "y": 7, "w": 12, "h": 3}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "label": "The Bag Tag",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Airline baggage tags and IATA three-letter airport codes",
+      "thesis": "Your move as one tag that follows everything from EWR to MAA: one partner, door to door.",
+      "palette": ["#FFFFFF", "#00056E", "#FEA70E", "#0F1B24"],
+      "materials": ["thermal-printed tag stock", "barcodes and IATA codes", "elastic loop and grommet"],
+      "viewport": "A giant tag spans the hero. Origin and destination codes are the headline, and the quote fields are printed on the tag.",
+      "risk": "It's familiar travel imagery that airlines use a lot, and it hints at flying luggage more than ocean freight.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "tag: EWR → MAA headline", "x": 1, "y": 1, "w": 10, "h": 3, "accent": true},
+        {"label": "tag stub: quote fields", "x": 1, "y": 4, "w": 10, "h": 2, "accent": true},
+        {"label": "barcode strip", "x": 1, "y": 6, "w": 10, "h": 1},
+        {"label": "hubs as tags", "x": 0, "y": 7, "w": 12, "h": 3}
+      ]}
+    },
+    {
+      "id": "challenger-cartons",
+      "label": "The Carton Wall",
+      "verdict": "competitive",
+      "lineage": "Sneaker archive box stacks, fused with labelled moving cartons",
+      "thesis": "Services and hubs as a wall of labelled cartons. Pull one out to open it.",
+      "palette": ["#E9A45A", "#00056E", "#FFFFFF", "#0F1B24"],
+      "materials": ["kraft box board", "printed end labels", "packing tissue"],
+      "viewport": "A stacked wall of cartons, each end label naming a service. The quote carton sits pulled half out at eye level.",
+      "case": "Fuses well because everyone who moves knows the labelled carton. It loses narrowly on clarity for the international, one-partner story.",
+      "risk": "It reads like a local moving company rather than an international one.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-sneaker-box-stacks-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-sneaker-box-stacks.webp"
+    },
+    {
+      "id": "challenger-brick",
+      "label": "Build Instructions",
+      "verdict": "declined",
+      "lineage": "Brick build-instruction booklets",
+      "thesis": "The move as numbered, exploded assembly steps.",
+      "palette": ["#8FC3E8", "#0F1B24", "#C8202F", "#F5C400"],
+      "materials": ["sky-blue pages", "keyline ink", "stud grid"],
+      "viewport": "Numbered steps with a parts inventory.",
+      "risk": "Too playful for a high-stakes move.",
+      "case": "Fuses poorly: families and diplomats don't see their move as a toy kit.",
+      "kept": "One strict alignment module for every region.",
+      "hero": "https://impeccable.style/worlds/cards/games-toys-physics-play-brick-build-instructions-hero.webp"
+    },
+    {
+      "id": "challenger-annual",
+      "label": "Design Annual Plates",
+      "verdict": "declined",
+      "lineage": "Design annual plate sections",
+      "thesis": "Moves presented as printed plates with registration marks.",
+      "palette": ["#F5F4F6", "#16181A", "#DCDDF3", "#C9C7C4"],
+      "materials": ["uncoated stock", "registration crosshairs", "circular stamp"],
+      "viewport": "Plate grid with hairline credits.",
+      "risk": "Gallery mood, no moving story.",
+      "case": "Fuses poorly: it reads as a portfolio, not a mover.",
+      "kept": "One accent used only as the seal; hairline-built grid.",
+      "hero": "https://impeccable.style/worlds/cards/design-annual-s-plate-section-hero.webp"
+    },
+    {
+      "id": "challenger-map",
+      "label": "Treasure Map",
+      "verdict": "declined",
+      "lineage": "Salt-stiffened treasure maps",
+      "thesis": "Navigation as inference on weathered vellum.",
+      "palette": ["#D9C49A", "#4A2E1A", "#9B2B22", "#8E9293"],
+      "materials": ["vellum", "iron-gall ink", "tide stains"],
+      "viewport": "A weathered map with a hidden route.",
+      "risk": "False trails contradict a promise of certainty.",
+      "case": "Fuses poorly: a mover must remove guesswork, not stage it.",
+      "kept": "A named state vocabulary for every stage.",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-salt-stiffened-treasure-map-hero.webp"
+    },
+    {
+      "id": "challenger-risograph",
+      "label": "Risograph Print",
+      "verdict": "declined",
+      "lineage": "Risograph spot-ink printing",
+      "thesis": "Spot inks misregistering over toothy paper.",
+      "palette": ["#F2EBDD", "#FF48B0", "#0078BF", "#FFB511"],
+      "materials": ["spot ink", "halftone grain"],
+      "viewport": "Ink-layered cut-paper sections.",
+      "risk": "Zine energy undercuts trust for big-ticket moves.",
+      "case": "Fuses poorly: it lacks the authority a customs-and-freight partner needs.",
+      "kept": "Two spot inks that overprint where they cross.",
+      "hero": "https://impeccable.style/worlds/cards/risograph-web-system-hero.webp"
+    },
+    {
+      "id": "challenger-sixpack",
+      "label": "Night Instrument Panel",
+      "verdict": "declined",
+      "lineage": "Light-aircraft night instrument six-pack",
+      "thesis": "Six luminous gauges you trust in the dark.",
+      "palette": ["#0B0C0E", "#F2F2F2", "#5CFF8A", "#FFB000"],
+      "materials": ["matte panel", "luminous dials"],
+      "viewport": "Six gauges as the move's status.",
+      "risk": "A dark theme breaks the light-theme brief.",
+      "case": "Fuses poorly: dark cockpit conflicts with the pinned light theme.",
+      "kept": "Every reading shows trend as well as value.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What international movers ship, executed impeccably.",
+    "palette": ["#FFFFFF", "#00056E", "#FEA70E", "#0F1B24"],
+    "materials": ["clean grid", "container-ship and crew photography"],
+    "viewport": "A full-width photo hero with a quote form beside the headline, then services, stats, reviews and hubs.",
+    "risk": "It's indistinguishable from competing movers by design."
+  },
+  "steer": true
+}

@@ -1,0 +1,1002 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Universal Relocations | International Moving, Planned &amp; Tracked Door to Door</title>
+<meta name="description" content="Universal Relocations: the one-stop relocation service for international, interstate and intrastate moves since 1998. Hubs in the USA, India and the UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#00056E;
+  --navy-700:#0A1180;
+  --navy-50:#EEF0FB;
+  --navy-100:#DCE0F6;
+  --orange:#FEA70E;
+  --orange-deep:#FB8E28;
+  --orange-50:#FFF5E3;
+  --ink:#0F1B24;
+  --muted:#596273;
+  --line:#E6E3DC;
+  --line-soft:#EFEDE7;
+  --paper:#FBFAF7;
+  --white:#fff;
+  --ok:#14866D;
+  --radius:18px;
+  --shadow-sm:0 1px 2px rgba(15,27,36,.06),0 1px 1px rgba(15,27,36,.04);
+  --shadow:0 1px 2px rgba(15,27,36,.05),0 12px 32px -12px rgba(0,5,110,.18);
+  --shadow-lg:0 2px 4px rgba(15,27,36,.04),0 30px 60px -20px rgba(0,5,110,.28);
+  --sans:"Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+:focus-visible{outline:2.5px solid var(--orange-deep);outline-offset:3px;border-radius:6px}
+
+/* ---------- type ---------- */
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--orange);border-radius:2px}
+h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.05;color:var(--ink)}
+h1{font-size:clamp(42px,5.6vw,76px);letter-spacing:-.035em;line-height:.98}
+h2{font-size:clamp(32px,3.6vw,50px)}
+h3{font-size:21px;letter-spacing:-.015em;line-height:1.2}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--navy)}
+.lede{font-size:clamp(17px,1.4vw,19.5px);color:var(--muted);max-width:56ch}
+.section{padding:120px 0}
+.section-head{max-width:760px;margin-bottom:56px}
+.section-head h2{margin:18px 0 18px}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-head.center .eyebrow{justify-content:center}
+.section-head.center .lede{margin:0 auto}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;transition:transform .2s ease}
+.btn:hover svg{transform:translateX(3px)}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 20px -8px rgba(0,5,110,.6)}
+.btn-navy:hover{background:var(--navy-700);transform:translateY(-1px)}
+.btn-orange{background:var(--orange);color:var(--navy);box-shadow:0 8px 20px -10px rgba(251,142,40,.9)}
+.btn-orange:hover{background:var(--orange-deep);transform:translateY(-1px)}
+.btn-ghost{border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.btn-ghost:hover{border-color:var(--navy);color:var(--navy)}
+.btn-sm{height:42px;padding:0 18px;font-size:15px}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--navy);border-bottom:1.5px solid var(--orange);padding-bottom:2px}
+.link-arrow svg{width:16px;height:16px;transition:transform .2s}
+.link-arrow:hover svg{transform:translateX(3px)}
+
+/* ---------- utility bar + nav ---------- */
+.utility{background:var(--navy);color:#C9CDF0;font-size:13.5px}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;gap:20px}
+.utility a:hover{color:#fff}
+.utility .hubs{display:flex;gap:22px}
+.utility .hubs span{color:var(--orange);font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;margin-right:6px}
+.utility .right{display:flex;gap:22px}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 20px -16px rgba(0,5,110,.3)}
+.nav .wrap{display:flex;align-items:center;height:76px;gap:40px}
+.brand img{height:38px;width:auto}
+.nav-links{display:flex;gap:4px;flex:1}
+.nav-links a{padding:9px 14px;border-radius:999px;font-weight:500;font-size:15.5px;color:#283241;display:inline-flex;align-items:center;gap:6px;transition:background .15s,color .15s}
+.nav-links a:hover{background:var(--navy-50);color:var(--navy)}
+.nav-links svg{width:12px;height:12px;opacity:.6}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.nav-cta .calc{font-weight:600;font-size:15px;color:var(--navy);padding:9px 14px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center}
+.burger svg{width:20px;height:20px}
+.mobile-menu{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:72px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 380px at 85% 10%,rgba(254,167,14,.13),transparent 70%),
+  radial-gradient(700px 500px at 70% 70%,rgba(0,5,110,.07),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;position:relative}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;color:#374151;box-shadow:var(--shadow-sm)}
+.pill b{background:var(--orange-50);color:#9A4E00;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px}
+.pill:hover{border-color:var(--navy-100)}
+.hero h1{margin:26px 0 24px}
+.hero h1 .serif{display:inline;position:relative;font-size:1.06em;white-space:nowrap}
+.hero h1 .serif::after{content:"";position:absolute;left:2%;right:0;bottom:.04em;height:.14em;background:var(--orange);opacity:.55;z-index:-1;border-radius:4px;transform-origin:left;animation:swipe 1s .8s cubic-bezier(.7,0,.2,1) both}
+@keyframes swipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.proof{display:flex;align-items:center;gap:22px;margin-top:40px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.proof .item{display:flex;align-items:center;gap:8px}
+.proof strong{color:var(--ink);font-weight:700;font-size:15px}
+.stars{color:var(--orange);letter-spacing:1px;font-size:14px}
+.proof .sep{width:1px;height:22px;background:var(--line)}
+
+/* hero tracker */
+.stage{position:relative;padding:40px 0 40px}
+.tracker{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-lg);overflow:hidden;position:relative;z-index:2}
+.tracker-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line-soft)}
+.tracker-head .id{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.tracker-head .title{font-weight:700;font-size:16.5px;margin-top:2px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--navy-50);color:var(--navy)}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 0 rgba(254,167,14,.6);animation:ping 1.8s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(254,167,14,.55)}80%,100%{box-shadow:0 0 0 9px rgba(254,167,14,0)}}
+.map{position:relative;height:250px;background:
+  radial-gradient(circle at 1px 1px,#D6D9EC 1.1px,transparent 1.3px) 0 0/14px 14px,
+  linear-gradient(180deg,#F7F8FD,#fff);}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .label{position:absolute;background:#fff;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:12px;line-height:1.25;box-shadow:var(--shadow-sm)}
+.map .label b{display:block;font-size:13px}
+.map .label span{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.03em}
+.route-path{stroke-dasharray:6 7;animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-13}}
+.milestones{display:grid;grid-template-columns:repeat(5,1fr);padding:20px 22px 6px;position:relative}
+.milestones::before{content:"";position:absolute;left:calc(22px + 10%);right:calc(22px + 10%);top:29px;height:2px;background:var(--line)}
+.milestones::after{content:"";position:absolute;left:calc(22px + 10%);top:29px;height:2px;width:calc((100% - 44px) * .6 - 0px);background:linear-gradient(90deg,var(--navy),var(--orange));transform-origin:left;animation:grow 1.4s .6s cubic-bezier(.5,0,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.ms{text-align:center;position:relative;z-index:1}
+.ms i{display:grid;place-items:center;width:20px;height:20px;margin:0 auto 10px;border-radius:50%;background:#fff;border:2px solid var(--line)}
+.ms.done i{background:var(--navy);border-color:var(--navy)}
+.ms.done i::after{content:"";width:6px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.ms.now i{border-color:var(--orange);background:var(--orange-50)}
+.ms.now i::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.ms b{display:block;font-size:12.5px;font-weight:600}
+.ms span{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.tracker-foot{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-soft);margin-top:16px}
+.tracker-foot div{padding:14px 22px}
+.tracker-foot div+div{border-left:1px solid var(--line-soft)}
+.tracker-foot small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tracker-foot strong{font-size:16px;font-weight:700}
+.float{position:absolute;z-index:3;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;display:flex;align-items:center;gap:12px;font-size:13.5px;line-height:1.3}
+.float .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;flex:none}
+.float .ic svg{width:18px;height:18px}
+.float small{display:block;color:var(--muted);font-size:12px}
+.float-a{left:-44px;bottom:-22px;animation:bob 6s ease-in-out infinite}
+.float-b{right:-30px;top:-34px;animation:bob 7s 1s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ---------- press strip ---------- */
+.press{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.press .wrap{display:flex;align-items:center;gap:40px;padding-top:26px;padding-bottom:26px}
+.press p{font-size:14px;color:var(--muted);max-width:210px;flex:none;line-height:1.4}
+.press p strong{color:var(--ink);font-weight:600}
+.marquee{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:marquee 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee img{height:52px;width:auto;filter:grayscale(1) contrast(1.1);opacity:.62;transition:opacity .2s,filter .2s}
+.marquee img:hover{filter:none;opacity:1}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- handoff band ---------- */
+.handoff{padding:110px 0 40px}
+.handoff-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end;margin-bottom:56px}
+.handoff-grid h2{margin-top:18px}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.step{padding:26px 20px 24px;position:relative;border-right:1px solid var(--line-soft);transition:background .2s}
+.step:last-child{border-right:0}
+.step:hover{background:var(--navy-50)}
+.step .n{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em}
+.step .ic{width:42px;height:42px;border-radius:12px;background:var(--navy-50);color:var(--navy);display:grid;place-items:center;margin:16px 0 14px;transition:background .2s,color .2s}
+.step:hover .ic{background:var(--navy);color:var(--orange)}
+.step .ic svg{width:22px;height:22px}
+.step b{display:block;font-size:16px;margin-bottom:4px}
+.step p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.step:not(:last-child)::after{content:"";position:absolute;right:-7px;top:46px;width:12px;height:12px;background:#fff;border-top:1px solid var(--line);border-right:1px solid var(--line);transform:rotate(45deg);z-index:1}
+.step:hover::after{background:var(--navy-50)}
+.flow-note{display:flex;align-items:center;gap:10px;margin-top:18px;color:var(--muted);font-size:14px}
+.flow-note .bar{height:6px;width:56px;border-radius:6px;background:linear-gradient(90deg,var(--navy),var(--orange))}
+
+/* ---------- pillars ---------- */
+.pillar{display:grid;grid-template-columns:1fr 1.08fr;gap:72px;align-items:center;padding:56px 0}
+.pillar.flip .pillar-copy{order:2}
+.tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:8px;background:var(--navy);color:#fff}
+.tag.o{background:var(--orange);color:var(--navy)}
+.pillar h2{font-size:clamp(30px,3.1vw,44px);margin:20px 0 18px}
+.checks{margin:28px 0 32px;display:grid;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#2B3443}
+.checks svg{flex:none;width:22px;height:22px;margin-top:1px;color:var(--navy)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.panel-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line-soft);background:#FDFDFB}
+.panel-bar .dots{display:flex;gap:6px}
+.panel-bar .dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.panel-bar .t{font-family:var(--mono);font-size:12px;color:var(--muted)}
+/* calculator */
+.calc-tabs{display:flex;gap:6px;padding:16px 20px 0}
+.calc-tabs button{padding:8px 14px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--muted);border:1px solid var(--line)}
+.calc-tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.calc-rows{padding:10px 20px 6px}
+.row{display:grid;grid-template-columns:1fr auto 74px;gap:16px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border-bottom:0}
+.row .nm{font-weight:600;font-size:15px}
+.row .nm small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.stepper button{width:32px;height:32px;font-size:17px;color:var(--navy);transition:background .15s}
+.stepper button:hover{background:var(--navy-50)}
+.stepper output{width:34px;text-align:center;font-family:var(--mono);font-size:14px}
+.row .vol{font-family:var(--mono);font-size:13.5px;text-align:right;color:#2B3443}
+.calc-total{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:8px 20px 20px;padding:16px 18px;border-radius:14px;background:var(--navy);color:#fff}
+.calc-total small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#AEB4E8}
+.calc-total .big{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.calc-total .rec{text-align:right}
+.calc-total .rec strong{color:var(--orange);font-size:15px}
+.meter{height:6px;border-radius:6px;background:rgba(255,255,255,.15);margin-top:8px;overflow:hidden;width:170px;margin-left:auto}
+.meter i{display:block;height:100%;background:var(--orange);border-radius:6px;transition:width .35s cubic-bezier(.4,0,.2,1)}
+/* move panel */
+.feed{padding:8px 20px 20px}
+.feed-item{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+.feed-item:last-child{border-bottom:0}
+.feed-item .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--navy-50);color:var(--navy)}
+.feed-item .ic.o{background:var(--orange-50);color:#B35F00}
+.feed-item .ic svg{width:20px;height:20px}
+.feed-item b{font-size:15px;display:block}
+.feed-item p{font-size:13.5px;color:var(--muted)}
+.feed-item time{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.doc{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--navy);background:var(--navy-50);border-radius:8px;padding:5px 10px}
+.doc svg{width:14px;height:14px}
+.bubble{margin:0 20px 20px;display:flex;gap:12px;align-items:center;background:var(--orange-50);border:1px solid #FBE2B6;border-radius:14px;padding:12px 14px}
+.bubble .av{width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--orange);display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.bubble p{font-size:14px;color:#3A2A10}
+.bubble p b{color:var(--ink)}
+
+/* ---------- resources (index cards) ---------- */
+.resources{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.res{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s}
+.res:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--navy-100)}
+.res .viz{height:170px;border-bottom:1px solid var(--line);background:#fff;position:relative;padding:22px}
+.res .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.res .meta{display:flex;gap:8px;align-items:center}
+.new{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;background:var(--orange);color:var(--navy);padding:3px 8px;border-radius:6px;font-weight:500}
+.res .meta span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.res h3{margin-top:4px}
+.res p{color:var(--muted);font-size:15px}
+.res .go{margin-top:auto;padding-top:12px;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:8px;font-size:15px}
+.res .go svg{width:16px;height:16px;transition:transform .2s}
+.res:hover .go svg{transform:translateX(4px)}
+.viz-list{display:grid;gap:9px}
+.viz-list div{display:flex;align-items:center;gap:10px;font-size:13px;color:#2B3443}
+.viz-list i{width:16px;height:16px;border-radius:5px;border:1.5px solid var(--line);flex:none}
+.viz-list .ok i{background:var(--navy);border-color:var(--navy);position:relative}
+.viz-list .ok i::after{content:"";position:absolute;left:4.5px;top:1.5px;width:4px;height:8px;border:solid #fff;border-width:0 1.8px 1.8px 0;transform:rotate(45deg)}
+.viz-list .ok{color:var(--muted);text-decoration:line-through;text-decoration-color:#C3C7D3}
+.viz-bars{display:flex;align-items:flex-end;gap:10px;height:100%}
+.viz-bars div{flex:1;border-radius:8px 8px 3px 3px;background:var(--navy-100);position:relative}
+.viz-bars div.hi{background:var(--navy)}
+.viz-bars div span{position:absolute;bottom:-1px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:10px;color:var(--navy);transform:translateY(100%)}
+.viz-terms{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.viz-terms span{font-family:var(--mono);font-size:12px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.viz-terms span.hl{background:var(--navy);color:#fff;border-color:var(--navy)}
+.viz-terms span.ho{background:var(--orange-50);border-color:#FBE2B6;color:#8A4800}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.svc{background:#fff;padding:30px 26px 28px;display:flex;flex-direction:column;gap:12px;min-height:236px;position:relative;transition:background .25s}
+.svc:hover{background:var(--navy)}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--navy-50);color:var(--navy);display:grid;place-items:center;transition:background .25s,color .25s}
+.svc .ic svg{width:24px;height:24px}
+.svc h3{font-size:19px;margin-top:10px;transition:color .25s}
+.svc p{font-size:14.5px;color:var(--muted);transition:color .25s}
+.svc .arrow{position:absolute;top:28px;right:24px;width:20px;height:20px;color:var(--line);transition:color .25s,transform .25s}
+.svc:hover h3{color:#fff}
+.svc:hover p{color:#C0C5EE}
+.svc:hover .ic{background:rgba(255,255,255,.1);color:var(--orange)}
+.svc:hover .arrow{color:var(--orange);transform:translate(3px,-3px)}
+.svc-foot{display:flex;justify-content:space-between;align-items:center;margin-top:28px;flex-wrap:wrap;gap:16px;color:var(--muted);font-size:15px}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:40px 28px 36px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat .v{font-size:clamp(44px,4.6vw,64px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--navy)}
+.stat .v sup{font-size:.45em;color:var(--orange-deep);vertical-align:top;margin-left:2px;position:relative;top:.2em}
+.stat .l{margin-top:12px;font-size:15px;color:var(--muted)}
+
+/* ---------- why ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:border-color .2s,box-shadow .2s}
+.why:hover{border-color:var(--navy-100);box-shadow:var(--shadow)}
+.why .num{font-family:var(--mono);font-size:12px;color:var(--orange-deep);letter-spacing:.06em}
+.why h3{margin:16px 0 10px;font-size:20px}
+.why p{color:var(--muted);font-size:15px}
+.why .lic{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.why .lic span{font-family:var(--mono);font-size:11px;padding:4px 8px;border-radius:6px;background:var(--navy-50);color:var(--navy)}
+
+/* ---------- hubs ---------- */
+.hubs-sec{background:var(--navy-50);border-top:1px solid var(--navy-100);border-bottom:1px solid var(--navy-100);position:relative;overflow:hidden}
+.hubs-sec::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 1px 1px,rgba(0,5,110,.12) 1px,transparent 1.2px) 0 0/18px 18px;mask-image:linear-gradient(180deg,#000,transparent 70%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 70%)}
+.hubs-sec .wrap{position:relative}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hub{background:#fff;border-radius:22px;border:1px solid var(--navy-100);padding:28px;display:flex;flex-direction:column;gap:18px;transition:transform .25s,box-shadow .25s}
+.hub:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.hub-top{display:flex;justify-content:space-between;align-items:flex-start}
+.hub .code{font-size:46px;font-weight:800;letter-spacing:-.04em;color:var(--navy);line-height:1}
+.hub .tz{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-align:right;line-height:1.5}
+.hub .tz b{display:block;color:var(--ink);font-size:15px;font-weight:500}
+.hub p{color:var(--muted);font-size:15px}
+.cities{display:flex;flex-wrap:wrap;gap:6px}
+.cities span{font-size:13px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:#2B3443}
+.hub-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid var(--line-soft);gap:12px}
+.hub-foot .tel{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--navy);display:flex;align-items:center;gap:8px}
+.hub-foot .tel svg{width:16px;height:16px;color:var(--orange-deep)}
+
+/* ---------- reviews ---------- */
+.reviews-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:48px}
+.scores{display:flex;gap:14px}
+.score{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 20px;min-width:170px}
+.score .s{font-size:32px;font-weight:800;letter-spacing:-.03em;color:var(--navy);line-height:1}
+.score .s small{font-size:15px;color:var(--muted);font-weight:500}
+.score .src{font-size:13px;color:var(--muted);margin-top:6px}
+.rev-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:20px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:22px}
+.rev.feature{background:var(--navy);border-color:var(--navy);color:#fff}
+.rev q{font-size:18px;line-height:1.5;quotes:none;color:#2B3443}
+.rev.feature q{font-family:var(--serif);font-size:30px;line-height:1.2;color:#fff;letter-spacing:-.01em}
+.rev .who{margin-top:auto;display:flex;align-items:center;gap:12px}
+.rev .av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--orange-50);color:#8A4800;font-weight:700;font-size:14px}
+.rev.feature .av{background:var(--orange);color:var(--navy)}
+.rev .who b{display:block;font-size:15px}
+.rev .who small{font-size:13px;color:var(--muted)}
+.rev.feature .who small{color:#AEB4E8}
+
+/* ---------- CTA ---------- */
+.cta{padding:40px 0 120px}
+.cta-card{position:relative;overflow:hidden;border-radius:28px;background:var(--navy);color:#fff;padding:72px 64px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.cta-card::before{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;border:70px solid var(--orange);opacity:.95}
+.cta-card::after{content:"";position:absolute;right:30px;bottom:-200px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(254,167,14,.25),transparent 70%)}
+.cta-card h2{color:#fff;font-size:clamp(34px,3.8vw,54px);position:relative;z-index:1}
+.cta-card h2 .serif{color:var(--orange)}
+.cta-card p{color:#C9CDF0;margin-top:18px;font-size:18px;max-width:46ch;position:relative;z-index:1}
+.cta-actions{position:relative;z-index:1;background:#fff;color:var(--ink);border-radius:20px;padding:26px;display:grid;gap:12px;box-shadow:0 30px 60px -20px rgba(0,0,0,.4)}
+.opt{display:flex;align-items:center;gap:14px;padding:14px;border-radius:14px;border:1px solid var(--line);transition:border-color .2s,background .2s}
+.opt:hover{border-color:var(--navy);background:var(--navy-50)}
+.opt .ic{width:42px;height:42px;border-radius:12px;background:var(--navy);color:var(--orange);display:grid;place-items:center;flex:none}
+.opt .ic svg{width:20px;height:20px}
+.opt b{display:block;font-size:15.5px}
+.opt small{color:var(--muted);font-size:13px}
+.opt .chev{margin-left:auto;width:18px;height:18px;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{background:#fff;border-top:1px solid var(--line);padding:72px 0 32px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:40px}
+.foot-brand img{height:40px;width:auto}
+.foot-brand p{color:var(--muted);margin:18px 0 20px;max-width:34ch}
+.social{display:flex;gap:8px}
+.social a{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;color:var(--navy);transition:background .2s,color .2s,border-color .2s}
+.social a:hover{background:var(--navy);color:var(--orange);border-color:var(--navy)}
+.social svg{width:17px;height:17px}
+footer h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:16px}
+footer ul{display:grid;gap:10px}
+footer ul a{color:#2B3443}
+footer ul a:hover{color:var(--navy)}
+.fmc{margin-top:56px;padding:22px 24px;border-radius:16px;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;color:var(--muted);font-size:13.5px}
+.fmc .seal{width:46px;height:46px;border-radius:50%;background:var(--navy);color:var(--orange);display:grid;place-items:center;font-family:var(--mono);font-size:11px;font-weight:500}
+.fmc b{color:var(--ink)}
+.licenses{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.licenses span{font-family:var(--mono);font-size:11.5px;padding:4px 9px;border-radius:6px;border:1px solid var(--line);background:#fff;color:#2B3443}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.legal nav{display:flex;flex-wrap:wrap;gap:18px}
+.legal a:hover{color:var(--navy)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.load{opacity:0;transform:translateY(16px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}.d5{animation-delay:.5s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .nav-links{display:none}
+  .burger{display:inline-flex}
+  .nav .wrap{justify-content:space-between}
+  .nav-cta .calc{display:none}
+  .mobile-menu.open{display:block;position:absolute;top:76px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:12px 24px 24px;box-shadow:var(--shadow)}
+  .mobile-menu a{display:block;padding:14px 0;border-bottom:1px solid var(--line-soft);font-weight:600}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .stage{max-width:620px;margin:0 auto;width:100%}
+  .float-a{left:-10px}.float-b{right:-6px}
+  .handoff-grid,.pillar,.reviews-top,.cta-card{grid-template-columns:1fr;gap:36px}
+  .pillar.flip .pillar-copy{order:0}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .step:nth-child(3){border-right:0}
+  .step:nth-child(-n+3){border-bottom:1px solid var(--line-soft)}
+  .step:nth-child(3)::after{display:none}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .res-grid,.why-grid,.hub-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .rev.feature{grid-column:1/-1}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .foot-grid{grid-template-columns:1fr 1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .section{padding:84px 0}
+  .utility .hubs span+span,.utility .right{display:none}
+  .utility .hubs a:not(:first-child){display:none}
+  .nav-cta .btn{display:none}
+  .hero{padding:44px 0 70px}
+  .hero h1 .serif{white-space:normal}
+  .proof .sep{display:none}
+  .float{display:none}
+  .milestones b{font-size:11px}
+  .milestones span{display:none}
+  .tracker-foot div{padding:12px 14px}
+  .tracker-foot strong{font-size:14px}
+  .press .wrap{flex-direction:column;align-items:flex-start;gap:16px}
+  .flow{grid-template-columns:1fr 1fr}
+  .step{border-right:1px solid var(--line-soft)!important;border-bottom:1px solid var(--line-soft)}
+  .step:nth-child(even){border-right:0!important}
+  .step::after{display:none}
+  .res-grid,.why-grid,.hub-grid,.rev-grid,.svc-grid{grid-template-columns:1fr}
+  .scores{flex-wrap:wrap}
+  .cta-card{padding:44px 26px}
+  .cta-card::before{width:320px;height:320px;border-width:44px;right:-140px;top:-140px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .stat{padding:28px 18px}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" fill="#EEF0FB" stroke="none"/><path d="m8 12.5 2.6 2.6L16.5 9"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10 6-3.5v11L16 14"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M8 6.5h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15v3M8 18.5h4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8M7.5 5.5l9 5"/></symbol>
+    <symbol id="i-survey" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M9 11h6M9 15h4"/></symbol>
+    <symbol id="i-stamp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a3 3 0 1 1 6 0c0 1.5-1 2-1 4h-4c0-2-1-2.5-1-4z"/><path d="M4 17h16v4H4zM9 9V5a3 3 0 0 1 6 0"/></symbol>
+    <symbol id="i-ship" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15h18l-2.5 5h-13zM5 15V9h14v6M9 9V5h6v4"/><path d="M2 21.5c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1 2-1 4-1"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19 14.5 14.5 0 0 1 0-19"/></symbol>
+    <symbol id="i-office" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 9h2a2 2 0 0 1 2 2v10M2 21h20M8 7h4M8 11h4M8 15h4"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M12 11c-2.5 0-5.5 3.5-5.5 6.5 0 2 1.5 3 3 3 1 0 1.6-.6 2.5-.6s1.5.6 2.5.6c1.5 0 3-1 3-3 0-3-3-6.5-5.5-6.5z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.5 9.5 5-9.5 5-9.5-5z"/><path d="m2.5 12 9.5 5 9.5-5M2.5 16.5l9.5 5 9.5-5"/></symbol>
+    <symbol id="i-warehouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21V8l10-5 10 5v13"/><path d="M6 21v-9h12v9M6 15h12M6 18h12"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5h12.5v11H1.5zM14 9h4.5l3.5 3.5V16h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2.2-5.2A2 2 0 0 1 7 5.5h10a2 2 0 0 1 1.8 1.3L21 12v5h-2M3 12h18M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-frame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/><path d="m7 15 3-3 2 2 2-2 3 3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></symbol>
+  </defs>
+</svg>
+
+<!-- Utility bar -->
+<div class="utility">
+  <div class="wrap">
+    <div class="hubs">
+      <a href="tel:18883237356"><span>USA</span>1-888-323-7356</a>
+      <a href="tel:18001037356"><span>IND</span>1-800-103-7356</a>
+      <a href="tel:800137356"><span>UAE</span>800-13-7356</a>
+    </div>
+    <div class="right">
+      <a href="mailto:contact@universalrelocations.com">contact@universalrelocations.com</a>
+      <a href="#">FAQ</a>
+      <a href="#">Blog</a>
+    </div>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Universal Relocations home"><img src="assets/logo.png" alt="Universal Relocations, the one-stop relocation service" width="167" height="38"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services <svg><use href="#i-chev"/></svg></a>
+      <a href="#hubs">Hubs <svg><use href="#i-chev"/></svg></a>
+      <a href="#">Destinations <svg><use href="#i-chev"/></svg></a>
+      <a href="#resources">Resources <svg><use href="#i-chev"/></svg></a>
+      <a href="#">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#plan" class="calc">Moving calculator</a>
+      <a href="#quote" class="btn btn-orange btn-sm">Get a free quote <svg><use href="#i-arrow"/></svg></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#hubs">Hubs</a>
+    <a href="#">Destinations</a>
+    <a href="#resources">Resources</a>
+    <a href="#">About</a>
+    <a href="#plan">Moving calculator</a>
+    <a href="#quote" style="color:var(--navy)">Get a free quote &rarr;</a>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <a href="#quote" class="pill load d1"><b>Free</b> Video pre-move surveys in the USA, India &amp; UAE <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+      <h1 class="load d2">International moves, planned to the cubic foot <span class="serif">and tracked to your door.</span></h1>
+      <p class="lede load d3">Universal Relocations is one partner for the whole move: survey, packing, freight, customs and delivery. Families, expats and corporate teams have trusted us across 100+ countries since 1998.</p>
+      <div class="hero-ctas load d4">
+        <a href="#quote" class="btn btn-navy">Get a free estimate <svg><use href="#i-arrow"/></svg></a>
+        <a href="#quote" class="btn btn-ghost"><svg style="width:18px;height:18px"><use href="#i-video"/></svg> Schedule a video survey</a>
+      </div>
+      <div class="proof load d5">
+        <div class="item"><span class="stars">★★★★★</span><strong>4.5</strong> Trustpilot · 2,000+ reviews</div>
+        <span class="sep"></span>
+        <div class="item"><strong>4.4</strong> Google</div>
+        <span class="sep"></span>
+        <div class="item"><strong>FMC</strong> licensed OTI</div>
+      </div>
+    </div>
+
+    <div class="stage load d3">
+      <div class="float float-b">
+        <div class="ic" style="background:var(--navy-50);color:var(--navy)"><svg><use href="#i-shield"/></svg></div>
+        <div><b>Transit insurance</b><small>Covered door to door</small></div>
+      </div>
+
+      <div class="tracker" role="img" aria-label="Example shipment tracker showing a move from New Jersey to Chennai, currently on the vessel">
+        <div class="tracker-head">
+          <div>
+            <div class="id">SHIPMENT · UR-26-04817</div>
+            <div class="title">New Jersey &rarr; Chennai</div>
+          </div>
+          <span class="chip"><span class="dot"></span>On vessel</span>
+        </div>
+        <div class="map">
+          <svg viewBox="0 0 560 250" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#00056E"/><stop offset="1" stop-color="#FB8E28"/></linearGradient>
+            </defs>
+            <path id="route" d="M88 150 C 200 20, 380 20, 478 128" fill="none" stroke="url(#rg)" stroke-width="2.5" class="route-path"/>
+            <circle cx="88" cy="150" r="7" fill="#00056E"/><circle cx="88" cy="150" r="14" fill="#00056E" opacity=".12"/>
+            <circle cx="478" cy="128" r="7" fill="#fff" stroke="#FB8E28" stroke-width="3"/>
+            <circle cx="300" cy="44" r="4" fill="#00056E" opacity=".35"/>
+            <g>
+              <circle r="9" fill="#FEA70E"/><circle r="16" fill="#FEA70E" opacity=".22"/>
+              <animateMotion dur="9s" repeatCount="indefinite" keyPoints="0;0.62;0.62" keyTimes="0;0.7;1" calcMode="linear"><mpath href="#route"/></animateMotion>
+            </g>
+          </svg>
+          <div class="label" style="left:4%;top:68%"><b>Newark, NJ</b><span>PORT OF LOADING</span></div>
+          <div class="label" style="left:44%;top:6%"><b>Jebel Ali</b><span>TRANSSHIPMENT</span></div>
+          <div class="label" style="right:4%;top:62%"><b>Chennai</b><span>ETA 14 DEC</span></div>
+        </div>
+        <div class="milestones">
+          <div class="ms done"><i></i><b>Survey</b><span>12 Oct</span></div>
+          <div class="ms done"><i></i><b>Packed</b><span>28 Oct</span></div>
+          <div class="ms done"><i></i><b>Customs</b><span>31 Oct</span></div>
+          <div class="ms now"><i></i><b>On vessel</b><span>Day 6</span></div>
+          <div class="ms"><i></i><b>Delivered</b><span>Dec</span></div>
+        </div>
+        <div class="tracker-foot">
+          <div><small>Volume</small><strong>412 ft³</strong></div>
+          <div><small>Mode</small><strong>Groupage</strong></div>
+          <div><small>Next update</small><strong>Transship</strong></div>
+        </div>
+      </div>
+
+      <div class="float float-a">
+        <div class="ic" style="background:var(--navy);color:var(--orange)"><svg><use href="#i-chat"/></svg></div>
+        <div><b>Your move manager</b><small>Online 24/7 · one point of contact</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Press -->
+<section class="press" aria-label="As seen on">
+  <div class="wrap">
+    <p><strong>As seen on</strong> the publications covering global moving</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <img src="assets/press/Forbes.png" alt="Forbes" width="111" height="52">
+        <img src="assets/press/Fox-News.png" alt="Fox News" width="111" height="52">
+        <img src="assets/press/Associated-Press.png" alt="Associated Press" width="111" height="52">
+        <img src="assets/press/Bussiness-Insider.png" alt="Business Insider" width="111" height="52">
+        <img src="assets/press/MSN.png" alt="MSN" width="111" height="52">
+        <img src="assets/press/Khaleej-Times.png" alt="Khaleej Times" width="111" height="52">
+        <img src="assets/press/Gulf-News.png" alt="Gulf News" width="111" height="52">
+        <img src="assets/press/DNA-India.png" alt="DNA India" width="111" height="52">
+        <img src="assets/press/Forbes.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/Fox-News.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/Associated-Press.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/Bussiness-Insider.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/MSN.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/Khaleej-Times.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/Gulf-News.png" alt="" aria-hidden="true" width="111" height="52">
+        <img src="assets/press/DNA-India.png" alt="" aria-hidden="true" width="111" height="52">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- One-stop handoff band -->
+<section class="handoff">
+  <div class="wrap">
+    <div class="handoff-grid">
+      <div class="rv">
+        <span class="eyebrow">The one-stop relocation service</span>
+        <h2>Most moves go wrong in the handoffs. <span class="serif">We own all of them.</span></h2>
+      </div>
+      <p class="lede rv">Movers, freight forwarders, customs brokers and delivery crews often don't talk to each other. With Universal Relocations, every step runs through one team, from the first survey to the last unpacked box.</p>
+    </div>
+    <div class="flow rv">
+      <div class="step"><span class="n">01</span><div class="ic"><svg><use href="#i-survey"/></svg></div><b>Survey</b><p>In-home or video walk-through with a free estimate</p></div>
+      <div class="step"><span class="n">02</span><div class="ic"><svg><use href="#i-box"/></svg></div><b>Pack</b><p>Export-grade packing, inventory and crating</p></div>
+      <div class="step"><span class="n">03</span><div class="ic"><svg><use href="#i-stamp"/></svg></div><b>Export customs</b><p>Documentation and clearance at origin</p></div>
+      <div class="step"><span class="n">04</span><div class="ic"><svg><use href="#i-ship"/></svg></div><b>Freight</b><p>Ocean, air or groupage, with tracking</p></div>
+      <div class="step"><span class="n">05</span><div class="ic"><svg><use href="#i-stamp"/></svg></div><b>Import customs</b><p>Duty guidance and clearance at destination</p></div>
+      <div class="step"><span class="n">06</span><div class="ic"><svg><use href="#i-home"/></svg></div><b>Deliver</b><p>Doorstep delivery, unpacking and debris removal</p></div>
+    </div>
+    <div class="flow-note rv"><span class="bar"></span> One move manager, one contract and one point of contact for all six steps.</div>
+  </div>
+</section>
+
+<!-- Pillars -->
+<section class="section" id="plan" style="padding-top:60px">
+  <div class="wrap">
+    <div class="pillar">
+      <div class="pillar-copy rv">
+        <span class="tag">Plan</span>
+        <h2>Know the volume, the cost and the timeline before packing day</h2>
+        <p class="lede">Add your rooms and items, and we'll size the shipment and recommend the right container. Then a surveyor confirms everything on a quick video call.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Instant volume estimate from our moving calculator</li>
+          <li><svg><use href="#i-check"/></svg>Free video pre-move survey at a time that suits you</li>
+          <li><svg><use href="#i-check"/></svg>A clear, itemised quote with no surprise charges</li>
+        </ul>
+        <a href="#quote" class="link-arrow">Open the moving calculator <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="panel rv" id="calc">
+        <div class="panel-bar"><div class="dots"><i></i><i></i><i></i></div><span class="t">moving-calculator</span><span></span></div>
+        <div class="calc-tabs" role="tablist">
+          <button class="on" type="button">Living room</button>
+          <button type="button">Bedroom</button>
+          <button type="button">Kitchen</button>
+        </div>
+        <div class="calc-rows">
+          <div class="row" data-vol="45"><div class="nm">Sofa, 3-seat<small>45 ft³ each</small></div><div class="stepper"><button type="button" aria-label="Fewer sofas">&minus;</button><output>1</output><button type="button" aria-label="More sofas">+</button></div><div class="vol">45 ft³</div></div>
+          <div class="row" data-vol="30"><div class="nm">Dining table<small>30 ft³ each</small></div><div class="stepper"><button type="button" aria-label="Fewer tables">&minus;</button><output>1</output><button type="button" aria-label="More tables">+</button></div><div class="vol">30 ft³</div></div>
+          <div class="row" data-vol="12"><div class="nm">Bookshelf<small>12 ft³ each</small></div><div class="stepper"><button type="button" aria-label="Fewer bookshelves">&minus;</button><output>2</output><button type="button" aria-label="More bookshelves">+</button></div><div class="vol">24 ft³</div></div>
+          <div class="row" data-vol="3"><div class="nm">Medium cartons<small>3 ft³ each</small></div><div class="stepper"><button type="button" aria-label="Fewer cartons">&minus;</button><output>24</output><button type="button" aria-label="More cartons">+</button></div><div class="vol">72 ft³</div></div>
+        </div>
+        <div class="calc-total">
+          <div><small>Estimated volume</small><div class="big"><span id="total">171</span> ft³</div></div>
+          <div class="rec"><small>Recommended</small><strong id="rec">Groupage (shared)</strong><div class="meter"><i id="meter" style="width:30%"></i></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar flip">
+      <div class="pillar-copy rv">
+        <span class="tag o">Move</span>
+        <h2>Track every leg, from your doorstep to theirs</h2>
+        <p class="lede">See milestones, documents and ETAs as they happen. When you have a question, a real move manager answers at any hour.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Real-time tracking from packing to final delivery</li>
+          <li><svg><use href="#i-check"/></svg>Bill of lading, customs status and inventory in one place</li>
+          <li><svg><use href="#i-check"/></svg>24/7 online support across every time zone you're moving through</li>
+        </ul>
+        <a href="#quote" class="link-arrow">Talk to a move manager <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="panel rv">
+        <div class="panel-bar"><div class="dots"><i></i><i></i><i></i></div><span class="t">shipment / UR-26-04817</span><span></span></div>
+        <div class="feed">
+          <div class="feed-item"><div class="ic o"><svg><use href="#i-ship"/></svg></div><div><b>Departed Port Newark</b><p>Container loaded and sealed. Next stop: Jebel Ali.</p></div><time>06 NOV</time></div>
+          <div class="feed-item"><div class="ic"><svg><use href="#i-stamp"/></svg></div><div><b>Export customs cleared</b><p>All documents accepted at origin.</p><span class="doc"><svg><use href="#i-doc"/></svg>Bill of Lading.pdf</span></div><time>31 OCT</time></div>
+          <div class="feed-item"><div class="ic"><svg><use href="#i-box"/></svg></div><div><b>Packed &amp; inventoried</b><p>86 items labelled, photographed and insured.</p><span class="doc"><svg><use href="#i-doc"/></svg>Inventory.pdf</span></div><time>28 OCT</time></div>
+        </div>
+        <div class="bubble"><div class="av">UR</div><p><b>Move manager:</b> Your shipment is on schedule. We'll pre-file Chennai customs this week so delivery isn't held up.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resources: index cards -->
+<section class="section resources" id="resources">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Resources</span>
+      <h2>Plan with better information</h2>
+      <p class="lede">Practical guides from three decades of international moves. Use them to plan, pack and get through customs.</p>
+    </div>
+    <div class="res-grid">
+      <a href="#" class="res rv">
+        <div class="viz"><div class="viz-list">
+          <div class="ok"><i></i>Book video pre-move survey</div>
+          <div class="ok"><i></i>Check visa &amp; customs rules</div>
+          <div><i></i>Sort items: ship, store, sell</div>
+          <div><i></i>Notify banks &amp; utilities</div>
+          <div><i></i>Pack a first-week essentials bag</div>
+        </div></div>
+        <div class="body"><div class="meta"><span class="new">Updated</span><span>NOV '26</span></div><h3>Moving checklist</h3><p>Week-by-week tasks, from eight weeks out to day one in your new home.</p><span class="go">Open checklist <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a href="#" class="res rv">
+        <div class="viz"><div class="viz-bars" style="padding-bottom:16px">
+          <div style="height:38%"><span>XS</span></div><div style="height:56%"><span>S</span></div><div class="hi" style="height:88%"><span>M</span></div><div style="height:70%"><span>L</span></div><div style="height:44%"><span>XL</span></div><div style="height:26%"><span>WR</span></div>
+        </div></div>
+        <div class="body"><div class="meta"><span class="new">Guide</span><span>PACKING</span></div><h3>Packing tips</h3><p>Which carton for what, how to protect fragile items, and what never goes in the container.</p><span class="go">Read the guide <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a href="#" class="res rv">
+        <div class="viz"><div class="viz-terms">
+          <span class="hl">Bill of Lading</span><span>FCL</span><span class="ho">Groupage</span><span>Door-to-Door</span><span>CBM</span><span>Duty</span><span class="ho">Transit Insurance</span><span>NVOCC</span><span>Port of Entry</span>
+        </div></div>
+        <div class="body"><div class="meta"><span class="new">Glossary</span><span>TERMS</span></div><h3>Moving &amp; shipping terms</h3><p>Plain-English definitions for the jargon on your quote, contract and customs forms.</p><span class="go">Browse terms <svg><use href="#i-arrow"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>International, interstate and intrastate, <span class="serif">under one roof</span></h2>
+    </div>
+    <div class="svc-grid rv">
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-globe"/></svg></div><h3>International relocation</h3><p>Door-to-door household moves across 100+ countries.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-office"/></svg></div><h3>Corporate &amp; office</h3><p>Employee relocation and office moves with minimal downtime.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-paw"/></svg></div><h3>Pet relocation</h3><p>Vet paperwork, IATA crates and flights for pets.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-layers"/></svg></div><h3>Groupage solution</h3><p>Share container space and pay only for the volume you use.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-warehouse"/></svg></div><h3>Storage &amp; warehousing</h3><p>Secure short and long-term storage at origin or destination.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-truck"/></svg></div><h3>Intra &amp; interstate</h3><p>Licensed moves within and between US states.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-car"/></svg></div><h3>Auto shipping</h3><p>Vehicle shipping by RoRo or container.</p></a>
+      <a href="#" class="svc"><svg class="arrow"><use href="#i-arrow-ur"/></svg><div class="ic"><svg><use href="#i-frame"/></svg></div><h3>Fine art relocation</h3><p>Custom crating and climate-aware handling for valuable pieces.</p></a>
+    </div>
+    <div class="svc-foot">
+      <span>Also: baggage shipping, transit insurance and hospitality logistics.</span>
+      <a href="#" class="link-arrow">View all services <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section aria-label="Universal Relocations in numbers">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat rv"><div class="v"><span data-count="28">28</span><sup>+</sup></div><div class="l">Years moving families, expats and diplomats, since 1998</div></div>
+      <div class="stat rv"><div class="v"><span data-count="100">100</span><sup>+</sup></div><div class="l">Countries covered by our network</div></div>
+      <div class="stat rv"><div class="v"><span data-count="11">11</span></div><div class="l">Offices across three global hubs</div></div>
+      <div class="stat rv"><div class="v">4.5<sup>★</sup></div><div class="l">Trustpilot rating from 2,000+ reviews</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Why Universal Relocations</span>
+      <h2>Why families and companies choose us</h2>
+      <p class="lede">We started in 1998 moving corporate expatriates and diplomats. Many of those clients still move with us today.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why rv"><span class="num">01 · EXPERTISE</span><h3>Nearly three decades of international moves</h3><p>Moving diplomats, executives and families since 1998, with the process knowledge that comes with it.</p></div>
+      <div class="why rv"><span class="num">02 · TRACKING</span><h3>Real-time visibility at every milestone</h3><p>Know where your shipment is, which documents are cleared and when it will arrive.</p></div>
+      <div class="why rv"><span class="num">03 · SUPPORT</span><h3>24/7 online support</h3><p>Move managers in the USA, India and the UAE, so someone is always awake on your time zone.</p></div>
+      <div class="why rv"><span class="num">04 · NETWORK</span><h3>A global partner network</h3><p>Vetted agents across Africa, Asia, Europe, the Americas and Oceania handle the local legs.</p></div>
+      <div class="why rv"><span class="num">05 · PROTECTION</span><h3>Transit insurance built in</h3><p>Every item is inventoried and photographed, and covered from pickup to delivery.</p></div>
+      <div class="why rv"><span class="num">06 · COMPLIANCE</span><h3>Licensed and bonded</h3><p>A US Federal Maritime Commission licensed NVOCC for household goods to and from the USA.</p><div class="lic"><span>FMC OTI NF025083</span><span>US DOT 2428388</span><span>MC 836909-C</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Hubs -->
+<section class="section hubs-sec" id="hubs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our hubs across the world</span>
+      <h2>Local teams on both ends of your move</h2>
+      <p class="lede">From local moves to international relocations, our three hubs serve homes, families and businesses worldwide.</p>
+    </div>
+    <div class="hub-grid">
+      <article class="hub rv">
+        <div class="hub-top"><div class="code">USA</div><div class="tz">NEW JERSEY<b data-tz="America/New_York">--:--</b></div></div>
+        <p>Reliable moving and relocation services for homes, families and businesses across the United States.</p>
+        <div class="cities"><span>New Jersey</span><span>Maryland</span><span>Georgia</span><span>Texas</span><span>California</span></div>
+        <div class="hub-foot"><a class="tel" href="tel:18883237356"><svg><use href="#i-phone"/></svg>1-888-323-7356</a><a href="#" class="link-arrow">Explore <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="hub rv">
+        <div class="hub-top"><div class="code">IND</div><div class="tz">CHENNAI<b data-tz="Asia/Kolkata">--:--</b></div></div>
+        <p>Trusted moving and relocation services across India, so you can move with confidence and ease.</p>
+        <div class="cities"><span>Chennai</span><span>Bangalore</span><span>Hyderabad</span><span>Mumbai</span><span>New Delhi</span></div>
+        <div class="hub-foot"><a class="tel" href="tel:18001037356"><svg><use href="#i-phone"/></svg>1-800-103-7356</a><a href="#" class="link-arrow">Explore <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="hub rv">
+        <div class="hub-top"><div class="code">UAE</div><div class="tz">DUBAI<b data-tz="Asia/Dubai">--:--</b></div></div>
+        <p>Expert moving and relocation for individuals, families and businesses across the UAE.</p>
+        <div class="cities"><span>Dubai</span></div>
+        <div class="hub-foot"><a class="tel" href="tel:800137356"><svg><use href="#i-phone"/></svg>800-13-7356</a><a href="#" class="link-arrow">Explore <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section">
+  <div class="wrap">
+    <div class="reviews-top">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Reviews</span>
+        <h2>Moves our customers recommend</h2>
+      </div>
+      <div class="scores rv">
+        <div class="score"><div class="s">4.5<small>/5</small></div><div class="stars">★★★★★</div><div class="src">Trustpilot · 2,000+ reviews</div></div>
+        <div class="score"><div class="s">4.4<small>/5</small></div><div class="stars">★★★★☆</div><div class="src">Google reviews</div></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev feature rv"><q>We had a great experience with Universal Relocations. They were professional, helpful and transparent in every step of our move.</q><figcaption class="who"><span class="av">RA</span><span><b>Rohan Arora</b><small>Google review</small></span></figcaption></figure>
+      <figure class="rev rv"><q>The service and the delivery are definitely one of the best. I recommend Universal for anyone moving from overseas to India.</q><figcaption class="who"><span class="av">PM</span><span><b>Phanisree Marella</b><small>Google review</small></span></figcaption></figure>
+      <figure class="rev rv"><q>Well trained staff in every country. Excellent door-to-door delivery service.</q><figcaption class="who"><span class="av">HC</span><span><b>Hanuma Challa</b><small>Google review</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="quote">
+  <div class="wrap">
+    <div class="cta-card rv">
+      <div>
+        <h2>Plan your next move <span class="serif">with a move manager</span></h2>
+        <p>Start with a free video pre-move survey. A surveyor walks through your home with you and sends a complimentary estimate.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#" class="opt"><span class="ic"><svg><use href="#i-video"/></svg></span><span><b>Schedule a video survey</b><small>Pick a day and time that suits you</small></span><svg class="chev"><use href="#i-chev-r"/></svg></a>
+        <a href="#plan" class="opt"><span class="ic"><svg><use href="#i-calc"/></svg></span><span><b>Use the moving calculator</b><small>Estimate your volume and get a quote</small></span><svg class="chev"><use href="#i-chev-r"/></svg></a>
+        <a href="tel:18883237356" class="opt"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><b>Talk to a move manager</b><small>US 1-888-323-7356 · toll free</small></span><svg class="chev"><use href="#i-chev-r"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="Universal Relocations" width="176" height="40">
+        <p>The one-stop relocation service for international, interstate and intrastate moves since 1998.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+          <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.3l-7.2 8.2L22.4 21h-6.6l-5.2-6.8L4.7 21H1.4l7.7-8.8L1 3h6.8l4.7 6.2zM16.6 19h1.8L6.9 4.9H5z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-chat"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#">About us</a></li><li><a href="#">Corporate social responsibility</a></li><li><a href="#">Careers</a></li><li><a href="#">Company news</a></li><li><a href="#">Contact us</a></li></ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul><li><a href="#">Moving calculator</a></li><li><a href="#">Moving checklist</a></li><li><a href="#">Packing tips</a></li><li><a href="#">Knowledge base</a></li><li><a href="#">File a claim</a></li><li><a href="#">Moving referral</a></li></ul>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <ul><li><a href="#">Africa</a></li><li><a href="#">Asia</a></li><li><a href="#">Europe</a></li><li><a href="#">North America</a></li><li><a href="#">Oceania</a></li><li><a href="#">South America</a></li></ul>
+      </div>
+      <div>
+        <h4>Ocean shipping</h4>
+        <ul><li><a href="#">Bill of lading</a></li><li><a href="#">FMC rules &amp; tariff</a></li><li><a href="#">Historic FMC rules</a></li><li><a href="#">Credit application</a></li><li><a href="#">Supplier registration</a></li></ul>
+      </div>
+    </div>
+
+    <div class="fmc">
+      <div class="seal">FMC</div>
+      <div>
+        <b>US Federal Maritime Commission.</b> U.S. federal law (the Shipping Act of 1984) requires Ocean Transportation Intermediaries to be licensed and bonded, which protects consumers. Universal Relocations Inc., a New Jersey corporation, is licensed by the FMC under license no. FMC-OTI NF025083 to operate NVOCC services for international household goods shipments to and from the USA.
+        <div class="licenses"><span>MC #836909-C</span><span>New Jersey #39PC00115200</span><span>TxDMV #007065281C</span><span>FMC OTI #NF025083</span><span>US DOT #2428388</span><span>CA #662949</span></div>
+      </div>
+    </div>
+
+    <div class="legal">
+      <span>&copy; 2026 Universal Relocations. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="#">Privacy policy</a><a href="#">Terms &amp; conditions</a><a href="#">SMS terms</a><a href="#">Cookies</a><a href="#">Cancellation &amp; refunds</a><a href="#">Anti-bribery code</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  // Sticky nav shadow
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Mobile menu
+  const burger = document.getElementById('burger'), menu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+  // Scroll reveal with stagger among siblings
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const sibs = [...e.target.parentElement.children].filter(c => c.classList.contains('rv'));
+      e.target.style.transitionDelay = (Math.max(0, sibs.indexOf(e.target)) * 70) + 'ms';
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Count-up stats
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      if (reduce) return;
+      const el = e.target, end = +el.dataset.count, start = 0;
+      const t0 = performance.now(), dur = 1400;
+      const tick = t => {
+        const p = Math.min(1, (t - t0) / dur), ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + (end - start) * ease);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+  // Moving calculator demo
+  const rows = [...document.querySelectorAll('#calc .row')];
+  const totalEl = document.getElementById('total'), recEl = document.getElementById('rec'), meter = document.getElementById('meter');
+  const update = () => {
+    let total = 0;
+    rows.forEach(r => {
+      const n = +r.querySelector('output').value, v = n * +r.dataset.vol;
+      r.querySelector('.vol').textContent = v + ' ft³';
+      total += v;
+    });
+    totalEl.textContent = total;
+    recEl.textContent = total < 300 ? 'Groupage (shared)' : total < 1050 ? "20' container" : "40' container";
+    meter.style.width = Math.min(100, total / 2100 * 100) + '%';
+  };
+  rows.forEach(r => {
+    const out = r.querySelector('output'), [minus, plus] = r.querySelectorAll('button');
+    out.value = out.textContent;
+    const step = r.dataset.vol === '3' ? 6 : 1; // cartons move in sixes
+    minus.addEventListener('click', () => { out.value = Math.max(0, +out.value - step); update(); });
+    plus.addEventListener('click', () => { out.value = +out.value + step; update(); });
+  });
+  document.querySelectorAll('.calc-tabs button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.calc-tabs button').forEach(x => x.classList.toggle('on', x === b));
+  }));
+  update();
+
+  // Live hub clocks
+  const clocks = document.querySelectorAll('[data-tz]');
+  const tickClocks = () => clocks.forEach(c => {
+    c.textContent = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', timeZone: c.dataset.tz }).format(new Date());
+  });
+  tickClocks(); setInterval(tickClocks, 30000);
+})();
+</script>
+</body>
+</html>
