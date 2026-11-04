@@ -1,7 +1,7 @@
 ---
 version: 1
-slug: "app-page-tsx"
-primary_target: "app/page.tsx"
+slug: "app-bill-v2-page-tsx"
+primary_target: "app/(bill)/v2/page.tsx"
 related_targets: []
 ---
 

@@ -19,7 +19,8 @@ const courier = Courier_Prime({
 });
 
 export const metadata: Metadata = {
-  title: "Universal Relocations | International moving, one company door to door",
+  title: "Universal Relocations | Bill of Lading concept (v2)",
+  robots: { index: false, follow: false },
   description:
     "The one-stop relocation service for international, interstate and intrastate moves since 1998. Survey, packing, freight, customs and delivery from hubs in the USA, India and the UAE.",
   icons: { icon: "/brand/logo.png" },

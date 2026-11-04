@@ -1,153 +1,423 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-03T00:00:00Z",
+  "generatedAt": "2026-11-04T18:00:00Z",
   "title": "Design System: Universal Relocations",
   "extensions": {
     "colorMeta": {
-      "navy": { "role": "primary", "displayName": "Form Navy", "canonical": "#00056e", "tonalRamp": ["#000226", "#00033f", "#00056e", "#1a21a3", "#4c52c9", "#8a8edf", "#c3c6ee", "#eceef7"] },
-      "orange": { "role": "secondary", "displayName": "Stamp-Pad Orange", "canonical": "#fea70e", "tonalRamp": ["#4a2e00", "#7a4c00", "#b87300", "#e69400", "#fea70e", "#ffc354", "#ffdb9a", "#fff3dc"] },
-      "orange-deep": { "role": "secondary", "displayName": "Pressed Orange", "canonical": "#fb8e28", "tonalRamp": ["#4a2200", "#7a3900", "#b35609", "#e2741a", "#fb8e28", "#fcaa62", "#fdcb9c", "#fff0e2"] },
-      "stamp": { "role": "secondary", "displayName": "Rubber-Stamp Orange", "canonical": "#f58a0b", "tonalRamp": ["#471f00", "#753600", "#ad5203", "#dd7006", "#f58a0b", "#f9a94f", "#fccb94", "#fff0dd"] },
-      "ribbon": { "role": "tertiary", "displayName": "Typewriter Ribbon", "canonical": "#14161c", "tonalRamp": ["#0a0b0e", "#14161c", "#2a2e38", "#454a58", "#666c7c", "#9095a3", "#c2c5ce", "#eceef2"] },
-      "paper": { "role": "neutral", "displayName": "Bond Paper", "canonical": "#ffffff", "tonalRamp": ["#1f1f1f", "#3d3d3d", "#5e5e5e", "#808080", "#a3a3a3", "#c7c7c7", "#ebebeb", "#ffffff"] },
-      "desk": { "role": "neutral", "displayName": "Desk", "canonical": "#eceef7", "tonalRamp": ["#1c1f33", "#343a5c", "#525a87", "#7880ad", "#a2a8cc", "#c9cde6", "#eceef7", "#f7f8fc"] },
-      "tint": { "role": "neutral", "displayName": "Shaded Cell", "canonical": "#f2f3fa", "tonalRamp": ["#1d1f33", "#363a5e", "#555a8a", "#7b80b0", "#a5a9d0", "#cdd0ea", "#f2f3fa", "#fafbfe"] },
-      "hair": { "role": "neutral", "displayName": "Hairline", "canonical": "rgba(0, 5, 110, 0.3)", "tonalRamp": ["rgba(0, 5, 110, 0.9)", "rgba(0, 5, 110, 0.75)", "rgba(0, 5, 110, 0.62)", "rgba(0, 5, 110, 0.45)", "rgba(0, 5, 110, 0.3)", "rgba(0, 5, 110, 0.2)", "rgba(0, 5, 110, 0.12)", "rgba(0, 5, 110, 0.06)"] },
-      "hair-strong": { "role": "neutral", "displayName": "Heavy Hairline", "canonical": "rgba(0, 5, 110, 0.62)", "tonalRamp": ["rgba(0, 5, 110, 0.9)", "rgba(0, 5, 110, 0.75)", "rgba(0, 5, 110, 0.62)", "rgba(0, 5, 110, 0.45)", "rgba(0, 5, 110, 0.3)", "rgba(0, 5, 110, 0.2)", "rgba(0, 5, 110, 0.12)", "rgba(0, 5, 110, 0.06)"] },
-      "navy-soft": { "role": "neutral", "displayName": "Second Impression", "canonical": "#4a4e94", "tonalRamp": ["#15173a", "#262961", "#4a4e94", "#5d61a2", "#7e82ba", "#a3a6d2", "#c3c6ee", "#eceef7"] },
-      "navy-faint": { "role": "neutral", "displayName": "Faded Print", "canonical": "#5d61a2", "tonalRamp": ["#15173a", "#262961", "#4a4e94", "#5d61a2", "#7e82ba", "#a3a6d2", "#c3c6ee", "#eceef7"] },
-      "on-navy-soft": { "role": "neutral", "displayName": "Reversed Tint", "canonical": "#c3c6ee", "tonalRamp": ["#15173a", "#262961", "#4a4e94", "#5d61a2", "#7e82ba", "#a3a6d2", "#c3c6ee", "#eceef7"] }
+      "navy": {
+        "role": "primary",
+        "displayName": "Universal Navy",
+        "canonical": "#00056e",
+        "tonalRamp": [
+          "#00023a",
+          "#00056e",
+          "#0a118a",
+          "#1a23a8",
+          "#2b3be0",
+          "#8c92c9",
+          "#c9cde8",
+          "#e8eaf4"
+        ]
+      },
+      "navy-2": {
+        "role": "primary",
+        "displayName": "Deep Navy Hover",
+        "canonical": "#0a118a"
+      },
+      "navy-3": {
+        "role": "primary",
+        "displayName": "Signal Navy",
+        "canonical": "#1a23a8"
+      },
+      "navy-glow": {
+        "role": "primary",
+        "displayName": "Navy Glow",
+        "canonical": "#2b3be0"
+      },
+      "orange": {
+        "role": "secondary",
+        "displayName": "Route Orange",
+        "canonical": "#fea70e",
+        "tonalRamp": [
+          "#4a2600",
+          "#a24f00",
+          "#d06f00",
+          "#fb8e28",
+          "#fea70e",
+          "#ffb32e",
+          "#ffd27a",
+          "#ffe2a6"
+        ]
+      },
+      "orange-2": {
+        "role": "secondary",
+        "displayName": "Ember Orange",
+        "canonical": "#fb8e28"
+      },
+      "orange-ink": {
+        "role": "secondary",
+        "displayName": "Orange Ink",
+        "canonical": "#a24f00"
+      },
+      "orange-wash": {
+        "role": "secondary",
+        "displayName": "Orange Wash",
+        "canonical": "rgba(254, 167, 14, 0.14)"
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#f2f3f9",
+        "tonalRamp": [
+          "#11143d",
+          "#2f3468",
+          "#555a88",
+          "#8c92c9",
+          "#b9bcd8",
+          "#e8eaf4",
+          "#f2f3f9",
+          "#f8f9fd"
+        ]
+      },
+      "mist-2": {
+        "role": "neutral",
+        "displayName": "Mist Deep",
+        "canonical": "#e8eaf4"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#f8f9fd"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#11143d"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#2f3468"
+      },
+      "mute": {
+        "role": "neutral",
+        "displayName": "Mute",
+        "canonical": "#555a88"
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "On Navy",
+        "canonical": "#f5f6ff"
+      },
+      "on-navy-mute": {
+        "role": "neutral",
+        "displayName": "On Navy Mute",
+        "canonical": "#bcc0f2"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(17, 20, 61, 0.1)"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "rgba(17, 20, 61, 0.18)"
+      },
+      "line-navy": {
+        "role": "neutral",
+        "displayName": "Hairline on Navy",
+        "canonical": "rgba(255, 255, 255, 0.13)"
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Title block headline on the sheet; the closing headline and hub codes use the same expanded voice." },
-      "headline": { "displayName": "Headline", "purpose": "Reversed paper-white headline inside navy part bars." },
-      "title": { "displayName": "Title", "purpose": "Heads of form parts on paper and stage status words." },
-      "action": { "displayName": "Action", "purpose": "Label of the primary orange action." },
-      "body": { "displayName": "Body", "purpose": "Running text; descriptions at 16px in second-impression navy." },
-      "label": { "displayName": "Label", "purpose": "Condensed small-caps box names and form-part labels." },
-      "column-head": { "displayName": "Column Head", "purpose": "Table header rows and tear-line furniture on shaded cells." },
-      "typed-entry": { "displayName": "Typed Entry", "purpose": "What the visitor types into a box (19px on phones)." },
-      "typed-value": { "displayName": "Typed Value", "purpose": "Pre-filled typed values: references, dates, ratings, licence numbers, handled-by names." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, left-aligned at max 13ch on desktop, centred when stacked; the closing CTA band uses the same voice centred at clamp(2.6rem, 6vw, 5rem). Words rise out of masks."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, 16-20ch, balanced."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card headings; list titles sit at 680-720 weight, wdth 104-106."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section intros in mute, max 58ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; panel copy steps down to 0.84-0.95rem."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form, step and rail labels in sentence case."
+      },
+      "data": {
+        "displayName": "Data (mono)",
+        "purpose": "Live values only: hub clocks, route codes, licence and reference numbers."
+      }
     },
     "shadows": [
-      { "name": "sheet-on-desk", "value": "0 2px 3px rgba(0, 5, 110, 0.06), 0 34px 70px -34px rgba(0, 5, 110, 0.4)", "purpose": "The page sheet only, so the bond reads as lying on the desk." }
+      {
+        "name": "card",
+        "value": "0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 2px rgba(17, 20, 61, 0.05), 0 12px 32px -16px rgba(17, 20, 61, 0.18)",
+        "purpose": "Resting cards, the why-list panel, the selected review tab."
+      },
+      {
+        "name": "float",
+        "value": "0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 2px 4px rgba(17, 20, 61, 0.05), 0 34px 70px -30px rgba(17, 20, 61, 0.36), 0 80px 140px -70px rgba(0, 5, 110, 0.45)",
+        "purpose": "Panels overlapping a navy edge (planner) and the mobile nav sheet."
+      },
+      {
+        "name": "pill-glow-orange",
+        "value": "0 18px 40px -16px rgba(251, 142, 40, 0.75), 0 0 0 4px rgba(254, 167, 14, 0.22)",
+        "purpose": "Orange pill hover."
+      },
+      {
+        "name": "pill-glow-navy",
+        "value": "0 18px 40px -16px rgba(0, 5, 110, 0.6), 0 0 0 4px rgba(26, 35, 168, 0.18)",
+        "purpose": "Navy pill hover."
+      },
+      {
+        "name": "nav-solid",
+        "value": "0 14px 40px -18px rgba(17, 20, 61, 0.35)",
+        "purpose": "Scrolled nav pill, paired with saturate(1.4) blur(14px)."
+      }
     ],
     "motion": [
-      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hover fills (0.18s) and arrow slides (0.25-0.3s)." },
-      { "name": "ease-thump", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Stamp and seal landings; overshoot lives in the keyframes, not the curve." },
-      { "name": "stamp-thump", "value": "0.42s ease-thump: scale 1.9 rotate -15deg blur 3px -> scale 0.95 rotate -5deg -> scale 1 rotate -6deg", "purpose": "RECEIVED stamp landing on submit." },
-      { "name": "sheet-nudge", "value": "0.22s ease-out, 0.16s delay, translateY 2px at 40%", "purpose": "The sheet giving under the stamp's impact." },
-      { "name": "seal-drop", "value": "opacity 0.2s ease-out, transform 0.38s ease-thump, 0.1s delay; from scale 1.7 rotate -24deg", "purpose": "Circular seals landing in stage rows on scroll." }
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrances (mask-rise words, stage-in, scroll reveals), nav state change."
+      },
+      {
+        "name": "ease-soft",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Hover transitions, chip rotation, underline stroke draw, canvas fade-in."
+      },
+      {
+        "name": "reveal",
+        "value": "1.1s ease-out, rise 28px out of an 8px blur, once",
+        "purpose": "Scroll entrance for section blocks."
+      },
+      {
+        "name": "mark-draw",
+        "value": "stroke-dashoffset 1.1s ease-soft 0.35s",
+        "purpose": "Orange underline stroke under emphasised words on light."
+      },
+      {
+        "name": "marquee",
+        "value": "48s linear infinite",
+        "purpose": "Press logo strip; pauses on hover, wraps under reduced motion."
+      },
+      {
+        "name": "pulse-ring",
+        "value": "scale 0.5 to 2.6, opacity 0.8 to 0",
+        "purpose": "Live hub and route points."
+      },
+      {
+        "name": "cobe-globe",
+        "value": "canvas opacity 1.2s ease-soft; slow auto-rotation; drag to turn when interactive; eases to face a focused hub (instant under reduced motion)",
+        "purpose": "Shared dotted globe in the hero, hubs band and CTA; labels hide when their city turns away and are omitted without position-area support."
+      },
+      {
+        "name": "hub-expand",
+        "value": "grid-template-rows 0fr to 1fr, 0.45s ease-out",
+        "purpose": "Active hub row reveals offices and toll-free number; others collapse."
+      }
     ],
     "breakpoints": [
-      { "name": "form-respan", "value": "1180px" },
-      { "name": "nav-drawer", "value": "1080px" },
-      { "name": "stack", "value": "900px" },
-      { "name": "bar-stack", "value": "720px" },
-      { "name": "phone", "value": "620px" }
-    ]
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "900px"
+      },
+      {
+        "name": "nav",
+        "value": "960px"
+      },
+      {
+        "name": "stack",
+        "value": "1080px"
+      },
+      {
+        "name": "phone",
+        "value": "1120px"
+      }
+    ],
+    "globe": {
+      "engine": "cobe v2",
+      "dark": 0.62,
+      "diffuse": 1.25,
+      "mapSamples": 20000,
+      "mapBrightness": 5.5,
+      "baseColor": "#4557ff",
+      "markerColor": "#ffa80f",
+      "arcColor": "#ffa80f",
+      "glowColor": "#546bff",
+      "opacity": 0.96,
+      "arcWidth": 1.2,
+      "arcHeight": 0.28,
+      "atmosphere": "radial-gradient(circle at 50% 50%, rgba(84,104,255,0.5) 0%, rgba(43,59,224,0.2) 46%, transparent 68%); inset -7%; blur 16px",
+      "placements": {
+        "hero": "right column, max 560px (460 stacked, 340 phones), interactive, all arcs, hub labels",
+        "hubs": "right column, max 540px (380 and above copy below 900px), interactive, faces selected hub, arcs from it",
+        "cta": "rises from bottom edge, up to 1100px / 150% (170% phones), non-interactive, all arcs, no labels"
+      }
+    }
   },
   "components": [
     {
-      "name": "Primary Action (Quote Submit)",
+      "name": "Primary Pill",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Flat stamp-pad orange slab that fills its form box; navy label left, arrow right.",
-      "html": "<button class=\"ds-btn-primary\">Issue my free quote <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></button>",
-      "css": ".ds-btn-primary { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; min-height: 96px; padding: 18px clamp(16px, 2.2vw, 28px); background: var(--orange, #fea70e); color: var(--navy, #00056e); border: 0; border-radius: 0; font-family: var(--font-print, Archivo, sans-serif); font-size: clamp(20px, 1.8vw, 26px); font-weight: 800; font-stretch: 112%; letter-spacing: -0.01em; text-align: left; cursor: pointer; transition: background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary svg { flex: none; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: var(--orange-deep, #fb8e28); } .ds-btn-primary:hover svg { transform: translateX(5px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--navy, #00056e); outline-offset: -6px; }"
+      "description": "Orange action pill whose round navy chip carries the arrow.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Get a free quote<span class=\"ds-chip\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 14px; border-radius: 999px; padding: 7px 7px 7px 26px; min-height: 54px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-weight: 680; font-size: 1.02rem; background: #fea70e; color: #11143d; text-decoration: none; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s cubic-bezier(0.22,1,0.36,1), background-color 0.2s; } .ds-btn .ds-chip { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; background: #00056e; color: #fea70e; transition: transform 0.45s cubic-bezier(0.22,1,0.36,1); } .ds-btn:hover { transform: translateY(-2px); background: #ffb32e; box-shadow: 0 18px 40px -16px rgba(251,142,40,0.75), 0 0 0 4px rgba(254,167,14,0.22); } .ds-btn:hover .ds-chip { transform: rotate(-45deg); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 2px solid #1a23a8; outline-offset: 3px; }"
     },
     {
-      "name": "Masthead Quote Button",
+      "name": "Navy Pill",
       "kind": "button",
-      "refersTo": "button-masthead",
-      "description": "Compact orange action in the sticky masthead.",
-      "html": "<a class=\"ds-btn-mast\" href=\"#quote\">Get a free quote <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a>",
-      "css": ".ds-btn-mast { display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 20px; background: var(--orange, #fea70e); color: var(--navy, #00056e); font-family: var(--font-print, Archivo, sans-serif); font-weight: 800; font-size: 15.5px; text-decoration: none; transition: background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-mast svg { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-mast:hover { background: var(--orange-deep, #fb8e28); } .ds-btn-mast:hover svg { transform: translateX(3px); } .ds-btn-mast:focus-visible { outline: 2px solid var(--navy, #00056e); outline-offset: 3px; }"
+      "refersTo": "button-navy",
+      "description": "Navy action pill for light grounds; the chip turns orange.",
+      "html": "<a class=\"ds-btn-navy\" href=\"#\">Start with a free quote<span class=\"ds-chip-o\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-btn-navy { display: inline-flex; align-items: center; gap: 14px; border-radius: 999px; padding: 7px 7px 7px 26px; min-height: 54px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-weight: 680; font-size: 1.02rem; background: #00056e; color: #f5f6ff; text-decoration: none; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s, background-color 0.2s; } .ds-chip-o { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; background: #fea70e; color: #00056e; transition: transform 0.45s cubic-bezier(0.22,1,0.36,1); } .ds-btn-navy:hover { transform: translateY(-2px); background: #0a118a; box-shadow: 0 18px 40px -16px rgba(0,5,110,0.6), 0 0 0 4px rgba(26,35,168,0.18); } .ds-btn-navy:hover .ds-chip-o { transform: rotate(-45deg); } .ds-btn-navy:focus-visible { outline: 2px solid #1a23a8; outline-offset: 3px; }"
     },
     {
-      "name": "Numbered Form Box",
+      "name": "Ghost Pill",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary pill without a chip; translucent white with a strong hairline.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Moving calculator</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 26px; border-radius: 999px; border: 1px solid rgba(17,20,61,0.18); background: rgba(255,255,255,0.7); color: #11143d; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-weight: 650; font-size: 1.02rem; text-decoration: none; transition: border-color 0.25s, background-color 0.25s, transform 0.35s cubic-bezier(0.22,1,0.36,1); } .ds-btn-ghost:hover { border-color: #1a23a8; background: #ffffff; transform: translateY(-2px); } .ds-btn-ghost:focus-visible { outline: 2px solid #1a23a8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
       "kind": "input",
-      "refersTo": "form-box",
-      "description": "Paper cell in the hairline grid: reversed number tab, small-caps name, typed entry over a dotted underline.",
-      "html": "<div class=\"ds-boxgrid\"><label class=\"ds-box\"><span class=\"ds-box-label\"><span class=\"ds-box-num\">01</span>Moving from <span class=\"ds-box-sub\">Place of receipt</span></span><input class=\"ds-box-input\" placeholder=\"City, country\"></label><label class=\"ds-box\" data-error=\"true\"><span class=\"ds-box-label\"><span class=\"ds-box-num\">06</span>Email</span><input class=\"ds-box-input\" placeholder=\"you@example.com\"><span class=\"ds-box-err\">Complete this box with an email address.</span></label></div>",
-      "css": ".ds-boxgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--hair, rgba(0, 5, 110, 0.3)); border: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); } .ds-box { background: var(--paper, #fff); padding: 12px clamp(16px, 2.2vw, 28px) 14px; display: flex; flex-direction: column; gap: 8px; position: relative; transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1); } .ds-box:focus-within { background: var(--tint, #f2f3fa); } .ds-box:focus-within::after { content: \"\"; position: absolute; inset: 0; border: 2px solid var(--navy, #00056e); pointer-events: none; } .ds-box[data-error=\"true\"] { background: repeating-linear-gradient(-45deg, rgba(0, 5, 110, 0.07) 0 2px, transparent 2px 9px), var(--paper, #fff); } .ds-box-label { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-family: var(--font-print, Archivo, sans-serif); font-size: 12px; font-weight: 700; font-stretch: 87%; letter-spacing: 0.09em; text-transform: uppercase; color: var(--navy, #00056e); } .ds-box-num { font-variant-numeric: tabular-nums; font-weight: 800; color: var(--paper, #fff); background: var(--navy, #00056e); padding: 1px 5px; letter-spacing: 0.04em; } .ds-box-sub { font-weight: 500; color: var(--navy-faint, #5d61a2); letter-spacing: 0.06em; } .ds-box-input { width: 100%; border: 0; border-bottom: 1px dotted var(--hair-strong, rgba(0, 5, 110, 0.62)); border-radius: 0; background: transparent; font-family: var(--font-typed, 'Courier Prime', monospace); font-size: 21px; line-height: 1.3; color: var(--ribbon, #14161c); caret-color: var(--navy, #00056e); padding: 4px 0 2px; outline: none; } .ds-box-input::placeholder { color: var(--navy-faint, #5d61a2); opacity: 1; } .ds-box-err { display: flex; gap: 7px; font-family: var(--font-print, Archivo, sans-serif); font-size: 14px; font-weight: 600; line-height: 1.35; color: var(--navy, #00056e); } .ds-box-err::before { content: \"\"; flex: none; width: 14px; height: 14px; margin-top: 2px; background: var(--navy, #00056e); clip-path: polygon(50% 0, 100% 100%, 0 100%); }"
+      "refersTo": "input-field",
+      "description": "Planner field: 50px, 14px radius, navy-3 leading icon, focus ring in signal navy.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Moving from</span><span class=\"ds-control\"><svg class=\"ds-icon\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/></svg><input class=\"ds-input\" placeholder=\"City or state, e.g. New Jersey\"></span></label>",
+      "css": ".ds-field { display: block; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-label { display: block; margin-bottom: 6px; font-size: 0.86rem; font-weight: 650; color: #2f3468; } .ds-control { position: relative; display: block; } .ds-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #1a23a8; pointer-events: none; } .ds-input { width: 100%; height: 50px; padding: 0 16px 0 44px; border-radius: 14px; border: 1px solid rgba(17,20,61,0.18); background: #ffffff; font: inherit; font-size: 1rem; color: #11143d; transition: border-color 0.2s, box-shadow 0.2s; } .ds-input::placeholder { color: #696e98; } .ds-input:hover { border-color: rgba(17,20,61,0.32); } .ds-input:focus { outline: none; border-color: #1a23a8; box-shadow: 0 0 0 4px rgba(26,35,168,0.12); }"
     },
     {
-      "name": "Tick Box",
+      "name": "Option Chip",
       "kind": "chip",
-      "refersTo": "tick-box",
-      "description": "Square tick box; selecting types a Courier Prime X into it.",
-      "html": "<div class=\"ds-ticks\"><label class=\"ds-tick\"><input type=\"radio\" name=\"ds-size\"><span class=\"ds-tick-box\"></span>2 bed</label><label class=\"ds-tick\"><input type=\"radio\" name=\"ds-size\" checked><span class=\"ds-tick-box\"></span>3 bed</label></div>",
-      "css": ".ds-ticks { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--font-print, Archivo, sans-serif); color: var(--navy, #00056e); } .ds-tick { position: relative; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; min-height: 32px; cursor: pointer; white-space: nowrap; } .ds-tick input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-tick-box { width: 20px; height: 20px; border: 1.5px solid var(--navy, #00056e); display: grid; place-items: center; font-family: var(--font-typed, 'Courier Prime', monospace); font-weight: 700; font-size: 19px; line-height: 1; color: var(--ribbon, #14161c); background: var(--paper, #fff); } .ds-tick input:checked + .ds-tick-box::after { content: \"X\"; transform: translateY(1px); } .ds-tick:hover .ds-tick-box { background: var(--tint, #f2f3fa); } .ds-tick input:focus-visible + .ds-tick-box { outline: 2px solid var(--navy, #00056e); outline-offset: 2px; }"
+      "refersTo": "chip-option",
+      "description": "Pill radio for home size; selected fills navy.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip-opt\">Studio</button><button class=\"ds-chip-opt\" data-on=\"true\">2 bed</button><button class=\"ds-chip-opt\">3 bed</button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 6px; } .ds-chip-opt { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid rgba(17,20,61,0.18); background: transparent; color: #11143d; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.88rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, color 0.2s; } .ds-chip-opt:hover { border-color: #1a23a8; } .ds-chip-opt:focus-visible { outline: 2px solid #1a23a8; outline-offset: 2px; } .ds-chip-opt[data-on=\"true\"] { background: #00056e; border-color: #00056e; color: #ffffff; }"
     },
     {
-      "name": "Masthead Navigation",
-      "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Paper masthead with hairline-separated link cells that shade on hover.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#\">Services</a><a href=\"#\">How it works</a><a href=\"#\">Hubs</a><a href=\"#\">Reviews</a></nav>",
-      "css": ".ds-nav { display: flex; min-height: 72px; background: var(--paper, #fff); border-bottom: 1.5px solid var(--navy, #00056e); border-left: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); } .ds-nav a { display: flex; align-items: center; padding: 0 20px; font-family: var(--font-print, Archivo, sans-serif); font-size: 15.5px; font-weight: 600; color: var(--navy, #00056e); text-decoration: none; border-right: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); transition: background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav a:hover { background: var(--tint, #f2f3fa); } .ds-nav a:focus-visible { outline: 2px solid var(--navy, #00056e); outline-offset: -2px; }"
-    },
-    {
-      "name": "Part Bar",
-      "kind": "custom",
-      "refersTo": "part-bar",
-      "description": "Reversed navy bar opening a part of the form, with a form-part caption at the right.",
-      "html": "<div class=\"ds-bar\"><h2>Six stages. One company signs for every one.</h2><span class=\"ds-bar-note\">Particulars of carriage</span></div>",
-      "css": ".ds-bar { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: clamp(26px, 3.4vw, 44px) clamp(16px, 2.2vw, 28px) 18px; background: var(--navy, #00056e); color: var(--paper, #fff); font-family: var(--font-print, Archivo, sans-serif); } .ds-bar h2 { margin: 0; font-size: clamp(30px, 3.9vw, 56px); font-weight: 800; font-stretch: 116%; line-height: 0.98; letter-spacing: -0.03em; max-width: 20ch; } .ds-bar-note { flex: none; font-size: 12px; font-weight: 700; font-stretch: 87%; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-navy-soft, #c3c6ee); border: 1px solid rgba(195, 198, 238, 0.45); padding: 5px 9px; }"
-    },
-    {
-      "name": "Particulars Table",
+      "name": "Card",
       "kind": "card",
-      "description": "Ruled document table: shaded column heads, hairline rules, number column, typed handled-by entry.",
-      "html": "<div class=\"ds-table\"><div class=\"ds-tr ds-th\"><span>Stage</span><span>Status</span><span>Handled by</span></div><div class=\"ds-tr\"><span class=\"ds-no\">01</span><span class=\"ds-word\">Received</span><span class=\"ds-typed\">Universal Relocations</span></div><div class=\"ds-tr\"><span class=\"ds-no\">02</span><span class=\"ds-word\">Surveyed</span><span class=\"ds-typed\">Universal Relocations</span></div></div>",
-      "css": ".ds-table { background: var(--paper, #fff); border: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); font-family: var(--font-print, Archivo, sans-serif); color: var(--navy, #00056e); } .ds-tr { display: grid; grid-template-columns: 72px 1fr 1fr; border-bottom: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); } .ds-tr:last-child { border-bottom: 0; } .ds-tr > * { padding: 18px clamp(16px, 2.2vw, 28px); border-right: 1px solid var(--hair, rgba(0, 5, 110, 0.3)); } .ds-tr > *:last-child { border-right: 0; } .ds-th { background: var(--tint, #f2f3fa); } .ds-th > * { padding-top: 9px; padding-bottom: 9px; font-size: 11.5px; font-weight: 700; font-stretch: 87%; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-soft, #4a4e94); } .ds-no { font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--navy-soft, #4a4e94); } .ds-word { font-size: clamp(24px, 2.3vw, 34px); font-weight: 800; font-stretch: 118%; letter-spacing: -0.025em; line-height: 1.05; } .ds-typed { font-family: var(--font-typed, 'Courier Prime', monospace); font-weight: 700; font-size: 15px; color: var(--ribbon, #14161c); }"
+      "refersTo": "card",
+      "description": "White 28px card with hairline border, card shadow and a surface inset block.",
+      "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\">Plan with real numbers</h3><p class=\"ds-card-text\">Book an in-home or video pre-move survey and get an itemised estimate.</p><div class=\"ds-inset\"><span>Volume estimate</span><b>790 cu ft</b></div></article>",
+      "css": ".ds-card { display: flex; flex-direction: column; gap: 20px; padding: clamp(24px, 3vw, 36px); border-radius: 28px; background: #ffffff; border: 1px solid rgba(17,20,61,0.1); box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset, 0 1px 2px rgba(17,20,61,0.05), 0 12px 32px -16px rgba(17,20,61,0.18); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #11143d; } .ds-card-title { margin: 0; font-weight: 700; font-variation-settings: 'wdth' 104; font-size: clamp(1.35rem, 2vw, 1.75rem); line-height: 1.12; letter-spacing: -0.02em; } .ds-card-text { margin: 0; color: #555a88; line-height: 1.6; } .ds-inset { display: flex; justify-content: space-between; align-items: baseline; padding: 16px 18px; border-radius: 20px; background: #f8f9fd; border: 1px solid rgba(17,20,61,0.1); color: #555a88; font-size: 0.88rem; } .ds-inset b { color: #11143d; font-size: 1.7rem; font-weight: 760; font-variation-settings: 'wdth' 108; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }"
     },
     {
-      "name": "Received Stamp",
+      "name": "Floating Nav (solid)",
+      "kind": "nav",
+      "refersTo": "nav-bar-solid",
+      "description": "Scrolled state of the floating pill nav: blurred white, hairline, soft shadow.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">Universal Relocations</span><ul class=\"ds-nav-links\"><li><a href=\"#\">Services</a></li><li><a href=\"#\">How it works</a></li><li><a href=\"#\">Hubs</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Get a free quote</a></nav>",
+      "css": ".ds-nav { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px; min-height: 64px; padding: 8px 8px 8px 22px; border-radius: 999px; border: 1px solid rgba(17,20,61,0.1); background: rgba(255,255,255,0.92); color: #11143d; box-shadow: 0 14px 40px -18px rgba(17,20,61,0.35); backdrop-filter: saturate(1.4) blur(14px); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-nav-brand { font-weight: 740; color: #00056e; } .ds-nav-links { display: flex; justify-content: center; gap: 4px; margin: 0; padding: 0; list-style: none; } .ds-nav-links a { display: block; padding: 9px 16px; border-radius: 999px; font-size: 0.97rem; font-weight: 600; color: inherit; text-decoration: none; transition: background-color 0.25s; } .ds-nav-links a:hover { background: #f2f3f9; } .ds-nav-links a:focus-visible, .ds-nav-cta:focus-visible { outline: 2px solid #1a23a8; outline-offset: 3px; } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #fea70e; color: #11143d; font-weight: 680; font-size: 0.97rem; text-decoration: none; }"
+    },
+    {
+      "name": "Navy Band",
       "kind": "custom",
-      "description": "Distressed orange RECEIVED stamp that thumps into a dashed target and overprints with multiply.",
-      "html": "<div class=\"ds-stampbox\"><svg class=\"ds-stamp\" viewBox=\"0 0 320 170\" role=\"img\" aria-label=\"Received\"><defs><filter id=\"ds-ink\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.85\" numOctaves=\"2\" seed=\"7\" result=\"grain\"/><feColorMatrix in=\"grain\" type=\"matrix\" values=\"0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.42\" result=\"speckle\"/><feComposite in=\"SourceGraphic\" in2=\"speckle\" operator=\"in\" result=\"pressed\"/><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.035\" numOctaves=\"2\" seed=\"3\" result=\"warp\"/><feDisplacementMap in=\"pressed\" in2=\"warp\" scale=\"3.2\" xChannelSelector=\"R\" yChannelSelector=\"G\"/></filter></defs><g filter=\"url(#ds-ink)\" fill=\"#f58a0b\" stroke=\"#f58a0b\"><rect x=\"6\" y=\"6\" width=\"308\" height=\"158\" rx=\"10\" fill=\"none\" stroke-width=\"7\"/><rect x=\"18\" y=\"18\" width=\"284\" height=\"134\" rx=\"5\" fill=\"none\" stroke-width=\"2.5\"/><text x=\"160\" y=\"86\" text-anchor=\"middle\" textLength=\"262\" lengthAdjust=\"spacingAndGlyphs\" stroke=\"none\" style=\"font-family: Archivo, sans-serif; font-weight: 800; font-size: 54px\">RECEIVED</text><line x1=\"40\" y1=\"104\" x2=\"280\" y2=\"104\" stroke-width=\"2.5\"/><text x=\"160\" y=\"134\" text-anchor=\"middle\" textLength=\"244\" lengthAdjust=\"spacingAndGlyphs\" stroke=\"none\" style=\"font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 19px\">03 NOV 2026 · UR-2611-2MZTO</text></g></svg></div>",
-      "css": ".ds-stampbox { position: relative; min-height: 190px; display: grid; place-items: center; background: var(--paper, #fff); } .ds-stampbox::before { content: \"\"; position: absolute; inset: 18px; border: 1.5px dashed var(--hair-strong, rgba(0, 5, 110, 0.62)); } .ds-stamp { position: relative; width: min(300px, 90%); mix-blend-mode: multiply; transform: rotate(-6deg); animation: ds-thump 0.42s cubic-bezier(0.22, 1, 0.36, 1) both; } @keyframes ds-thump { 0% { opacity: 0; transform: scale(1.9) rotate(-15deg); filter: blur(3px); } 55% { opacity: 1; transform: scale(0.95) rotate(-5deg); filter: blur(0); } 100% { transform: scale(1) rotate(-6deg); } } @media (prefers-reduced-motion: reduce) { .ds-stamp { animation: none; } }"
+      "refersTo": "band-navy",
+      "description": "Inset navy band with radial blue glows, on-navy type and an orange emphasis word.",
+      "html": "<section class=\"ds-band\"><h2 class=\"ds-band-title\">Our own people at <span class=\"ds-em\">both ends</span></h2><p class=\"ds-band-lede\">Offices in the USA, India and the UAE.</p><a class=\"ds-band-tel\" href=\"#\">1-888-323-7356</a></section>",
+      "css": ".ds-band { position: relative; overflow: hidden; border-radius: 40px; padding: 72px 32px; background: radial-gradient(50% 50% at 18% 0%, rgba(43,59,224,0.55), transparent 70%), radial-gradient(60% 50% at 80% 100%, rgba(43,59,224,0.4), transparent 70%), #00056e; color: #f5f6ff; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-band-title { margin: 0; font-weight: 740; font-variation-settings: 'wdth' 106; font-size: clamp(2.1rem, 4.4vw, 3.6rem); line-height: 1.02; letter-spacing: -0.032em; max-width: 16ch; } .ds-em { color: #fea70e; } .ds-band-lede { margin: 16px 0 24px; color: #bcc0f2; max-width: 50ch; } .ds-band-tel { display: inline-flex; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.13); color: #f5f6ff; font-weight: 650; text-decoration: none; transition: background-color 0.25s, border-color 0.25s; } .ds-band-tel:hover { background: rgba(255,255,255,0.12); border-color: rgba(254,167,14,0.6); } .ds-band-tel:focus-visible { outline: 2px solid #fea70e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Globe Hub Label",
+      "kind": "custom",
+      "refersTo": "band-navy",
+      "description": "Navy pill naming a hub above (or below) its orange marker on the dotted globe.",
+      "html": "<div class=\"ds-globe-stage\"><span class=\"ds-globe-dot\"></span><span class=\"ds-globe-label\">New Jersey</span></div>",
+      "css": ".ds-globe-stage { position: relative; display: grid; place-items: center; width: 220px; height: 120px; border-radius: 28px; background: radial-gradient(circle at 50% 60%, rgba(84,104,255,0.5) 0%, rgba(43,59,224,0.2) 46%, transparent 68%), #00056e; } .ds-globe-dot { width: 10px; height: 10px; border-radius: 999px; background: #fea70e; box-shadow: 0 0 0 4px rgba(254,167,14,0.14); } .ds-globe-label { position: absolute; top: 34px; padding: 3px 10px; border-radius: 999px; background: rgba(0,5,110,0.78); border: 1px solid rgba(254,167,14,0.55); color: #f5f6ff; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.72rem; font-weight: 650; letter-spacing: 0.02em; white-space: nowrap; }"
+    },
+    {
+      "name": "Hub List Row",
+      "kind": "custom",
+      "refersTo": "band-navy",
+      "description": "Hub row on navy: dot, name, mono clock; the active row expands to show offices and a toll-free pill.",
+      "html": "<div class=\"ds-hubs\"><div class=\"ds-hub\" data-on=\"true\"><button class=\"ds-hub-btn\"><span class=\"ds-hub-name\">United States</span><span class=\"ds-hub-clock\">6:35 AM in New Jersey</span></button><div class=\"ds-hub-body\"><div><p class=\"ds-hub-offices\">New Jersey · Maryland · Georgia</p><a class=\"ds-hub-tel\" href=\"#\">1-888-323-7356</a></div></div></div><div class=\"ds-hub\"><button class=\"ds-hub-btn\"><span class=\"ds-hub-name\">India</span><span class=\"ds-hub-clock\">5:05 PM in Chennai</span></button></div></div>",
+      "css": ".ds-hubs { padding: 24px; border-radius: 28px; background: #00056e; color: #f5f6ff; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-hub { position: relative; padding-left: 18px; border-top: 1px solid rgba(255,255,255,0.13); } .ds-hub::before { content: ''; position: absolute; left: 0; top: 22px; width: 8px; height: 8px; border-radius: 999px; background: rgba(255,255,255,0.25); } .ds-hub[data-on='true']::before { background: #fea70e; box-shadow: 0 0 0 5px rgba(254,167,14,0.18); } .ds-hub-btn { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; width: 100%; padding: 14px 0 12px; background: none; border: 0; color: inherit; font: inherit; text-align: left; cursor: pointer; } .ds-hub-btn:focus-visible { outline: 2px solid #fea70e; outline-offset: 3px; } .ds-hub-name { font-size: 1.4rem; font-weight: 720; font-variation-settings: 'wdth' 106; letter-spacing: -0.02em; color: #bcc0f2; transition: color 0.3s; } .ds-hub[data-on='true'] .ds-hub-name, .ds-hub-btn:hover .ds-hub-name { color: #f5f6ff; } .ds-hub-clock { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.74rem; font-weight: 500; color: #bcc0f2; } .ds-hub-body { display: grid; grid-template-rows: 1fr; } .ds-hub-body > * { min-height: 0; overflow: hidden; } .ds-hub-offices { margin: 0; font-size: 0.95rem; color: #bcc0f2; } .ds-hub-tel { display: inline-flex; margin: 10px 0 16px; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.13); color: #f5f6ff; font-weight: 650; text-decoration: none; } .ds-hub-tel:hover { background: rgba(255,255,255,0.12); border-color: rgba(254,167,14,0.6); }"
     }
   ],
   "narrative": {
-    "northStar": "The Bill of Lading",
-    "overview": "Every surface is a printed shipping document. A single white bond sheet lies on a pale navy desk and everything is printed on it: numbered boxes ruled in 1px navy hairlines, reversed navy title bars, columned tables with small-caps headers, and a perforated tear line at the foot. The visitor does not read about the service and then find a form. They fill in the document the company actually issues as an FMC-licensed NVOCC.\n\nThree inks do all the work. Navy is the printing ink: type, rules and reversed bars. Orange is the rubber stamp and the action, and nothing else. A third ink, the typewriter ribbon, belongs to the shipper. Anything typed into or onto the form (field values, references, licence numbers, the handled-by entry) is set in Courier Prime in ribbon black. Printed type is Archivo, pushed wide for titles and condensed for labels along its width axis. The density is that of real paperwork: tight boxes, tabular figures, generous headline scale against small, tracked labels.\n\nThe page has one signature event. On submit, a distressed orange RECEIVED stamp thumps into an empty dashed stamp box, overprints the hairlines with multiply blending, and the sheet nudges 2px under the impact. Smaller circular seals land row by row in the stages table as it scrolls into view.",
+    "northStar": "Daylight Corridors",
+    "overview": "The page is a route you can see. A pale ground tinted toward the brand navy carries the reading. Deep navy bands, inset from the window edge with large rounded corners, carry the contrast, and inside them the world is drawn in dots: land as dot fields, hubs as pulsing points, routes as orange arcs. Orange is not a decoration colour. It marks the thing you can act on, the route you are on, or the point that is live.\n\nEverything is soft geometry and one typeface. Archivo, pushed slightly wide on its width axis, sets every heading, label and paragraph; JetBrains Mono appears only where a value is live (hub clocks, route codes, references, licence numbers). White panels float over the navy edges on long soft shadows, and buttons are pills whose round chip carries the arrow. Density is generous on the page and tight inside the panels, which read like working product UI.\n\nThe world was chosen against a paperwork costume (forms, square boxes, typewriter type) and against the stock family-with-boxes photo hero. Demonstration UI (example route, sample volume estimate, sample tracking) is always labelled as an example.",
     "keyCharacteristics": [
-      "One bond sheet on a desk; all content printed on the sheet, square corners everywhere.",
-      "Hairline boxes built from a 1px gap over a navy-tinted ground, not from borders.",
-      "Numbered box labels: a reversed navy number tab plus a condensed small-caps name.",
-      "Two printed inks (navy, orange) plus a typed ribbon ink, each with a fixed job.",
-      "Archivo across its width axis for print; Courier Prime for anything typed.",
-      "Orange stamps overprint with multiply blending and a turbulence grain, never as clean vectors."
+      "Light navy-tinted ground, inset navy bands with soft blue radial glows.",
+      "Orange reserved for action pills, route arcs, live pins, emphasis words on navy and the underline stroke on light.",
+      "One family (Archivo across its width axis); mono only for live data.",
+      "Dots as the material: one dotted globe on navy, a dot-field route map on light, pulsing points, arcs.",
+      "Pill buttons with a round navy or orange chip carrying the arrow.",
+      "Hairline borders on white panels; long, navy-tinted floating shadows."
     ],
     "rules": [
-      { "name": "The Ink Has a Job Rule", "body": "Navy prints, orange stamps or acts, ribbon is typed. A color appearing outside its job (orange body text, navy typed entries, ribbon headlines) is a mistake.", "section": "colors" },
-      { "name": "The Stamp Is Not a Button Rule", "body": "Action orange and stamp orange are distinct inks. Stamps use the stamp ink with multiply blending and grain; actions use the flat action ink with navy text.", "section": "colors" },
-      { "name": "The Printed or Typed Rule", "body": "Every piece of text is either printed by the company (Archivo, navy) or typed onto the form (Courier Prime, ribbon). Choose by who would have put it there.", "section": "typography" },
-      { "name": "The Width Axis Rule", "body": "Hierarchy comes from the width axis as much as size: titles run expanded (112-125%), labels run condensed (87%). Labels never run at normal width.", "section": "typography" },
-      { "name": "The Tabular Figures Rule", "body": "Phone numbers, licence numbers, box numbers, times and stage numbers use tabular figures.", "section": "typography" },
-      { "name": "The One Sheet Rule", "body": "Only the sheet casts a shadow. Boxes, buttons and panels on it stay flat.", "section": "elevation" },
-      { "name": "The Overprint Rule", "body": "Stamps sit on top of the form, not inside it: multiply blending, a slight rotation, grain from an SVG turbulence mask, allowed to cross rules and spill out of their box.", "section": "elevation" }
+      {
+        "name": "The Ink Over Orange Rule",
+        "body": "On light grounds orange is a fill or a stroke, never text; emphasis is an ink word with an orange stroke drawn under it. Orange words are allowed only on navy. Text sitting on an orange fill is always ink or navy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Live Orange Rule",
+        "body": "If it is orange, it is an action, a route, or something live. Static decoration stays navy, mist or white.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Archivo sets everything; louder means wider and heavier on the same family, not a second display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Live Mono Rule",
+        "body": "JetBrains Mono appears only on values that are live or coded (times, IATA-style codes, licence and reference numbers). Phone numbers and counts in Archivo use tabular figures instead.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lit Band Rule",
+        "body": "Navy bands get depth from radial blue glows (navy-glow at 35-60% alpha) and dot-field canvases, never from shadows or borders.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Nested Radius Rule",
+        "body": "A child's radius is always smaller than its container's: 40 band > 28 panel > 20 inset > 14 field.",
+        "section": "shapes"
+      }
     ],
     "dos": [
-      "Do build boxes as paper cells in a 1px-gap grid over the hairline color, so every rule is one hairline wide.",
-      "Do give every input box a reversed navy number tab and a condensed small-caps name, with sub-labels in shipping-document vocabulary.",
-      "Do set anything the visitor types, and any filled-in reference, date or licence number, in Courier Prime ribbon ink.",
-      "Do reserve flat action orange for the primary action, always with navy text and a pressed-orange hover.",
-      "Do print stamps in stamp orange with multiply blending, rotation and turbulence grain, and let them overprint rules.",
-      "Do use tabular figures for every number on the form.",
-      "Do honor reduced motion: stamps and seals appear in place without the thump."
+      "Do keep orange to actions, routes, live points, emphasis words on navy and the drawn underline stroke on light.",
+      "Do put every primary action in a pill with a round chip carrying the arrow (navy chip on orange, orange chip on navy).",
+      "Do draw geography in dots: dot-field land, pulsing orange hub points, orange arcs for routes.",
+      "Do set every heading in Archivo on the width axis (104-108) with tight negative tracking, and reserve JetBrains Mono for live values.",
+      "Do inset navy bands by the frame (10-20px) with a 40px radius so the mist ground rims them.",
+      "Do nest radii downward (40 > 28 > 20 > 14) and keep borders to 1px hairlines.",
+      "Do label demonstration UI as an example.",
+      "Do honour reduced motion: entrances collapse to 1ms, strokes appear without drawing, the marquee stops and wraps."
     ],
     "donts": [
-      "Don't round UI corners; the only curves belong to stamp impressions.",
-      "Don't add shadows to anything on the sheet; only the sheet itself casts one.",
-      "Don't use orange for text, rules, decoration or anything that is neither a stamp nor an action.",
-      "Don't set typed entries in Archivo or printed labels in Courier Prime.",
-      "Don't introduce red, green or other inks for state; errors are navy hatching and a navy marker.",
-      "Don't draw stamps as clean vector badges without grain, rotation and overprint.",
-      "Don't place a small label above a headline; form-part captions sit beside or below the headline in the part bar, and box labels sit inside their box."
+      "Don't set orange text on light grounds; use orange-ink for small text and icons there.",
+      "Don't introduce a second display face, uppercase tracked labels, or typewriter type.",
+      "Don't use square-cornered boxes or form-and-paperwork styling for containers.",
+      "Don't use flat grey or black shadows; shadows are long, negative-spread and tinted with ink or navy.",
+      "Don't use a stock family-with-boxes photo as a hero."
     ]
   }
 }
